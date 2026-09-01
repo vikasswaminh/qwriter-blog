@@ -13,11 +13,12 @@ const rest = posts.slice(1);
 <BaseLayout>
   <div class="home-layout">
     <aside class="sidebar-left">
-      <span class="sidebar-title">ALL BLOG POSTS</span>
+      <span class="sidebar-title">STRATEGY & PLATFORM</span>
       <ul class="sidebar-list">
-        {posts.map((p) => (
-          <li><a href={`/blog/${p.slug}/`}>{p.data.title}</a></li>
-        ))}
+        <li><a href="/blog/what-is-an-ai-workforce">What Is an AI Workforce? How AI Teams Are Changing Work — The Complete 2026 Guide</a></li>
+        <li><a href="/blog/ai-agents-vs-ai-assistants-whats-the-difference">AI Agents vs AI Assistants: What's the Difference?</a></li>
+        <li><a href="/blog/what-are-ai-agents-complete-guide-for-businesses-2026">What Are AI Agents? A Complete Guide for Businesses (2026)</a></li>
+        <li><a href="/blog" style="color: var(--accent); font-weight: 600;">View All →</a></li>
       </ul>
     </aside>
 
@@ -49,11 +50,8 @@ const rest = posts.slice(1);
                 <span class="featured-tag">{featured.data.tags[0]}</span>
               )}
               <h2 class="featured-title">{featured.data.title}</h2>
-              <p class="featured-desc" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; margin-bottom: 1rem; font-size: 0.95rem; line-height: 1.5;">{featured.data.description}</p>
               <div class="featured-meta">
                 <span>{readingTime(featured.body)} min read</span>
-                <span aria-hidden="true">·</span>
-                <span><FormattedDate date={featured.data.pubDate} /></span>
                 <span aria-hidden="true">·</span>
                 <span class="featured-more">Read article →</span>
               </div>
@@ -81,18 +79,11 @@ const rest = posts.slice(1);
     </main>
 
     <aside class="sidebar-right">
-      <span class="sidebar-title purple">OLLASUPER</span>
+      <span class="sidebar-title purple">AUTOMATION & TOOLS</span>
       <ul class="sidebar-list">
-        <li><a href="https://ollasuper.com/">Return to the main OllaSuper homepage to see everything.</a></li>
-        <li><a href="https://ollasuper.com/platform">Explore the autonomous platform that powers AI work.</a></li>
-        <li><a href="https://ollasuper.com/ai-employees">Meet your new AI employee workforce and see them in action.</a></li>
-        <li><a href="https://ollasuper.com/solutions">Discover industry-specific solutions tailored for your business.</a></li>
-        <li><a href="https://ollasuper.com/resources">Read our comprehensive guides and educational resources.</a></li>
-        <li><a href="https://ollasuper.com/blog">Follow the OllaSuper blog for the latest insights and news.</a></li>
-        <li><a href="https://ollasuper.com/pricing">View our flexible pricing plans designed for teams of all sizes.</a></li>
-        <li><a href="https://ollasuper.com/login">Access your OllaSuper dashboard to manage your AI workers.</a></li>
-        <li><a href="https://ollasuper.com/demo">Schedule a personalized demo to see how we can help you.</a></li>
-        <li><a href="https://ollasuper.com/signup" style="color: #3b82f6; font-weight: 600;">Deploy your AI workforce today and start scaling your team →</a></li>
+        <li><a href="/blog/best-ai-tools-for-business-2026">Best AI Tools for Business in 2026: The Complete, No-Fluff Buyer's Guide</a></li>
+        <li><a href="/blog/ai-automation-how-businesses-can-automate-workflows-with-ai">AI Automation: How Businesses Can Automate Workflows With AI</a></li>
+        <li><a href="/blog" style="color: #3b82f6; font-weight: 600;">View All Guides →</a></li>
       </ul>
     </aside>
   </div>

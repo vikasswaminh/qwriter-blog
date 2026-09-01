@@ -9,15 +9,171 @@ const tags = [...counts.entries()].sort((a, b) => b[1] - a[1]);
 ---
 
 <BaseLayout title="Tags" description="Browse posts by topic.">
-  <h1 class="page-title">Tags</h1>
-  {tags.length === 0 && <p class="empty">No tags yet.</p>}
-  <div class="tag-cloud">
-    {
-      tags.map(([t, n]) => (
-        <a class="tag tag-lg" href={`/tags/${t}/`}>
-          #{t} <span class="tag-count">{n}</span>
-        </a>
-      ))
-    }
+  <div class="tags-page-container">
+    <div class="tags-header">
+      <h1 class="tags-title">Explore <span class="text-gradient">Topics</span></h1>
+      <p class="tags-subtitle">Browse our collection of guides, insights, and resources by category.</p>
+    </div>
+
+    {tags.length === 0 && <p class="empty">No topics found.</p>}
+    
+    <div class="tags-grid">
+      {
+        tags.map(([t, n]) => (
+          <a class="tag-card" href={`/tags/${t}/`}>
+            <div class="tag-card-left">
+              <div class="tag-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="4" y1="9" x2="20" y2="9"></line>
+                  <line x1="4" y1="15" x2="20" y2="15"></line>
+                  <line x1="10" y1="3" x2="8" y2="21"></line>
+                  <line x1="16" y1="3" x2="14" y2="21"></line>
+                </svg>
+              </div>
+              <div class="tag-card-content">
+                <h2 class="tag-name">{t}</h2>
+                <span class="tag-count-badge">{n} {n === 1 ? 'Article' : 'Articles'}</span>
+              </div>
+            </div>
+            <div class="tag-card-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+        ))
+      }
+    </div>
   </div>
 </BaseLayout>
+
+<style>
+  .tags-page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .tags-header {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .tags-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--ink-black);
+    letter-spacing: -0.03em;
+    margin-bottom: 0.5rem;
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #f472b6, #a81c85);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .tags-subtitle {
+    font-size: 1rem;
+    color: var(--ink-muted);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  .tags-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-inline: 1rem;
+    margin-inline: -1rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #f472b6 transparent;
+  }
+  .tags-grid::-webkit-scrollbar {
+    height: 8px;
+  }
+  .tags-grid::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .tags-grid::-webkit-scrollbar-thumb {
+    background-color: #f472b6;
+    border-radius: 20px;
+  }
+  .tag-card {
+    flex: 0 0 320px;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(145deg, #ffffff, #fafafa);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  }
+  .tag-card:hover {
+    transform: translateY(-4px);
+    background: linear-gradient(145deg, #ffffff, #fff1f2);
+    box-shadow: 0 20px 25px -5px rgba(244, 114, 182, 0.15), 0 10px 10px -5px rgba(244, 114, 182, 0.1);
+    border-color: rgba(244, 114, 182, 0.3);
+  }
+  .tag-card-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .tag-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(244, 114, 182, 0.1);
+    color: #a81c85;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .tag-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .tag-card:hover .tag-icon {
+    background: linear-gradient(135deg, #f472b6, #a81c85);
+    color: white;
+    transform: scale(1.05) rotate(5deg);
+  }
+  .tag-name {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--ink-black);
+    margin: 0 0 0.3rem 0;
+    letter-spacing: -0.01em;
+  }
+  .tag-count-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #a81c85;
+    background: var(--candy-pink-soft);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+  }
+  .tag-card-arrow {
+    color: #a81c85;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .tag-card:hover .tag-card-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  @media (max-width: 768px) {
+    .tags-grid { grid-template-columns: 1fr; }
+    .tags-page-container { padding: 3rem 1.5rem; }
+    .tags-title { font-size: 2.75rem; }
+  }
+</style>

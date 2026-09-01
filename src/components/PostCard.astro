@@ -13,22 +13,14 @@ const { url, title, description, pubDate, tags = [], minutes } = Astro.props;
 ---
 
 <article class="post-card">
+  {tags.length > 0 && (
+    <span class="post-card-tag">{tags[0]}</span>
+  )}
   <h2 class="post-card-title"><a href={url}>{title}</a></h2>
-  <p class="post-card-meta">
-    <FormattedDate date={pubDate} />
-    {minutes ? <span aria-hidden="true">·</span> : null}
-    {minutes ? <span>{minutes} min read</span> : null}
-  </p>
   <p class="post-card-desc">{description}</p>
-  {
-    tags.length > 0 && (
-      <p class="post-card-tags">
-        {tags.map((t) => (
-          <a class="tag" href={`/tags/${t}/`}>
-            #{t}
-          </a>
-        ))}
-      </p>
-    )
-  }
+  <p class="post-card-meta">
+    {minutes ? <span>{minutes} min read</span> : null}
+    {minutes && pubDate ? <span aria-hidden="true">·</span> : null}
+    {pubDate ? <FormattedDate date={pubDate} /> : null}
+  </p>
 </article>

@@ -9,6 +9,7 @@ interface Props {
   title?: string;
   description?: string;
   image?: string;
+  className?: string;
   article?: {
     publishedTime?: string;
     modifiedTime?: string;
@@ -16,7 +17,7 @@ interface Props {
     tags?: string[];
   };
 }
-const { title = SITE.title, description, image, article } = Astro.props;
+const { title = SITE.title, description, image, article, className = '' } = Astro.props;
 ---
 
 <!doctype html>
@@ -26,9 +27,81 @@ const { title = SITE.title, description, image, article } = Astro.props;
   </head>
   <body>
     <Header />
-    <main class="container">
+    <main class={`container ${className}`.trim()}>
       <slot />
     </main>
     <Footer />
+  
+    
+    
+    <script>
+      const initTOC = () => {
+        if (window._updateTocHandler) {
+          window.removeEventListener("scroll", window._updateTocHandler);
+        }
+        
+        const headings = Array.from(document.querySelectorAll("h2[id], h3[id]"));
+        const tocLinks = document.querySelectorAll(".os-toc-link");
+        if (headings.length === 0 || tocLinks.length === 0) return;
+        
+        tocLinks.forEach(link => link.classList.remove("active"));
+        let lastActiveId = null;
+
+        window._updateTocHandler = () => {
+          let currentId = "";
+          headings.forEach(heading => {
+            const rect = heading.getBoundingClientRect();
+            // Trigger when heading comes into top 30% of screen
+            if (rect.top < window.innerHeight * 0.3) {
+              currentId = heading.id;
+            }
+          });
+          
+          if (!currentId && headings.length > 0) {
+            currentId = headings[0].id;
+          }
+          
+          if (currentId !== lastActiveId) {
+            tocLinks.forEach(link => {
+              link.classList.remove("active");
+              link.style.animation = "none";
+            });
+            if (currentId) {
+              const activeLink = document.querySelector(`.os-toc-link[href="#${currentId}"]`);
+              if (activeLink) {
+                activeLink.classList.add("active");
+                activeLink.offsetHeight; // trigger reflow
+                activeLink.style.animation = "toc-blink 0.6s ease-in-out";
+
+                // Auto-scroll the TOC sidebar to keep the active link visible
+                const sidebar = document.querySelector('.blog-sidebar');
+                if (sidebar) {
+                  const linkTop = activeLink.offsetTop;
+                  sidebar.scrollTo({
+                    top: Math.max(0, linkTop - 150),
+                    behavior: 'smooth'
+                  });
+                }
+              }
+            }
+            lastActiveId = currentId;
+          }
+        };
+
+        window.addEventListener("scroll", window._updateTocHandler, { passive: true });
+        window._updateTocHandler();
+      };
+      
+      document.addEventListener("DOMContentLoaded", initTOC);
+      document.addEventListener("astro:page-load", initTOC);
+    </script>
+    <style>
+      @keyframes toc-blink {
+        0% { background-color: transparent; }
+        50% { background-color: var(--candy-pink); color: white; }
+        100% { background-color: var(--candy-pink-soft); color: #a81c85; }
+      }
+    </style>
+
   </body>
 </html>

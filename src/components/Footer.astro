@@ -3,15 +3,220 @@ import { SITE } from '../config';
 const year = new Date().getFullYear();
 ---
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© {year} {SITE.brand}. All rights reserved.</p>
-    <p class="footer-links">
-      <a href={SITE.marketingUrl}>{SITE.marketingLabel}</a>
-      <span aria-hidden="true">·</span>
-      <a href="/rss.xml">RSS</a>
-      <span aria-hidden="true">·</span>
-      <a href="/tags/">Tags</a>
-    </p>
+<footer class="os-site-footer">
+  <div class="os-container footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <a href="https://ollasuper.com/" class="brand">
+          <svg width="24" height="24" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" style="margin-right: 8px;">
+            <circle cx="40" cy="40" r="11" fill="#0a0a0a"></circle>
+            <circle cx="40" cy="10" r="5" fill="#ff6b4a"></circle>
+            <circle cx="65.98" cy="25" r="5" fill="#16a34a"></circle>
+            <circle cx="65.98" cy="55" r="5" fill="#52525b"></circle>
+            <circle cx="40" cy="70" r="5" fill="#7c3aed"></circle>
+            <circle cx="14.02" cy="55" r="5" fill="#0066ff"></circle>
+            <circle cx="14.02" cy="25" r="5" fill="#facc15"></circle>
+          </svg>
+          <span style="font-weight: 900; font-size: 20px; color: var(--ink-black); letter-spacing: -0.5px;">OllaSuper</span>
+        </a>
+        <p class="brand-desc">The enterprise AI Workforce Platform. Deploy specialized AI employees that research, analyze, execute, and automate business workflows with full human governance.</p>
+        <div class="status-badge">
+          <span class="dot"></span> All Systems Operational
+        </div>
+        <div class="soc-badge">SOC2 Type II</div>
+      </div>
+      
+      <div class="footer-col">
+        <h4 class="footer-heading">Platform</h4>
+        <ul class="footer-list">
+          <li><a href="https://ollasuper.com/platform#workforce">AI Workforce Orchestration</a></li>
+          <li><a href="https://ollasuper.com/platform#observe">Deep Observability & Tracing</a></li>
+          <li><a href="https://ollasuper.com/platform#evaluate">Deterministic Evaluation</a></li>
+          <li><a href="https://ollasuper.com/platform#automate">Event-Driven Automation</a></li>
+          <li><a href="https://ollasuper.com/platform#integrations">Model Context Protocol & Ecosystem</a></li>
+          <li><a href="https://ollasuper.com/platform" style="color: var(--ink-black); font-weight: 600;">MCP Architecture →</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">AI Employees</h4>
+        <ul class="footer-list">
+          <li><a href="https://ollasuper.com/ai-employees/research">Research Employee</a></li>
+          <li><a href="https://ollasuper.com/ai-employees/sales">Sales Employee</a></li>
+          <li><a href="https://ollasuper.com/ai-employees/marketing">Marketing Employee</a></li>
+          <li><a href="https://ollasuper.com/ai-employees/customer-support">Customer Support Employee</a></li>
+          <li><a href="https://ollasuper.com/ai-employees/operations">Operations Employee</a></li>
+          <li><a href="https://ollasuper.com/ai-employees/custom">Custom Employee</a></li>
+          <li><a href="https://ollasuper.com/ai-employees" style="color: var(--ink-black); font-weight: 600;">Explore All Employees →</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Solutions</h4>
+        <ul class="footer-list">
+          <li><a href="https://ollasuper.com/solutions#sales">Revenue & Sales</a></li>
+          <li><a href="https://ollasuper.com/solutions#marketing">Brand & Content</a></li>
+          <li><a href="https://ollasuper.com/solutions#operations">Operations & Finance</a></li>
+          <li><a href="https://ollasuper.com/solutions#customer-experience">Customer Experience</a></li>
+          <li><a href="https://ollasuper.com/solutions#enterprise">Enterprise Solutions</a></li>
+          <li><a href="https://ollasuper.com/solutions#enterprise">Enterprise VPC</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Resources & Agentic</h4>
+        <ul class="footer-list">
+          <li><a href="https://ollasuper.com/resources">Knowledge Hub</a></li>
+          <li><a href="https://ollasuper.com/blog">Blog & Insights</a></li>
+          <li><a href="https://ollasuper.com/resources#guides">Deployment Guides</a></li>
+          <li><a href="https://ollasuper.com/pricing">Pricing & Plans</a></li>
+          <li><a href="https://ollasuper.com/demo">Book a Demo</a></li>
+          <li><a href="https://ollasuper.com/llms.txt">📄 /llms.txt (Agent Spec)</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="copyright">
+        © {year} OllaSuper Technologies Inc. All rights reserved.
+      </div>
+      <div class="legal-links">
+        <a href="https://ollasuper.com/privacy">Privacy Policy</a>
+        <a href="https://ollasuper.com/terms">Terms of Service</a>
+        <a href="https://ollasuper.com/security">Security & Trust</a>
+        <a href="https://ollasuper.com/sitemap.xml">Sitemap</a>
+      </div>
+    </div>
   </div>
 </footer>
+
+<style>
+  .os-site-footer {
+    background-color: var(--warm-cream);
+    border-top: 1px solid var(--border-medium);
+    padding: 64px 0 32px;
+    margin-top: 80px;
+  }
+  .footer-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 16px;
+  }
+  .brand-desc {
+    color: var(--ink-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    max-width: 280px;
+  }
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--ink-muted);
+    margin-bottom: 8px;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #10b981;
+    border-radius: 50%;
+  }
+  .soc-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--ink-muted);
+    border: 1px solid var(--border-medium);
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  .footer-heading {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--ink-black);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+  }
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-list li {
+    margin-bottom: 12px;
+  }
+  .footer-list a {
+    color: var(--ink-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.15s ease;
+  }
+  .footer-list a:hover {
+    color: var(--candy-pink);
+  }
+  .footer-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-light);
+    padding-top: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .copyright {
+    color: var(--ink-muted);
+    font-size: 0.9rem;
+  }
+  .legal-links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .legal-links a {
+    color: var(--ink-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.15s ease;
+  }
+  .legal-links a:hover {
+    color: var(--ink-black);
+  }
+  
+  @media (max-width: 900px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .footer-brand-col {
+      grid-column: span 2;
+    }
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+    .footer-brand-col {
+      grid-column: span 1;
+    }
+  }
+</style>

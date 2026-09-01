@@ -10,7 +10,7 @@ export const SITE = {
   marketingUrl: 'https://ollasuper.com',
   marketingLabel: 'ollasuper.com',
   author: 'OllaSuper Team',
-  accent: '#f59e0b',
+  accent: '#ff83da', /* Official bright pink */
   tagline: 'Supercharge your workflow.',
   locale: 'en',
 } as const;

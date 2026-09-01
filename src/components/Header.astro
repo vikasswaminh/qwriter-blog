@@ -7,9 +7,16 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWit
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/">
-      <span class="brand-mark" aria-hidden="true"></span>
-      <span class="brand-name">{SITE.brand}</span>
-      <span class="brand-sub">Blog</span>
+      <svg width="28" height="28" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" style="margin-right: 4px;">
+        <circle cx="40" cy="40" r="11" fill="#0a0a0a"></circle>
+        <circle cx="40" cy="10" r="5" fill="#ff6b4a"></circle>
+        <circle cx="65.98" cy="25" r="5" fill="#16a34a"></circle>
+        <circle cx="65.98" cy="55" r="5" fill="#52525b"></circle>
+        <circle cx="40" cy="70" r="5" fill="#7c3aed"></circle>
+        <circle cx="14.02" cy="55" r="5" fill="#0066ff"></circle>
+        <circle cx="14.02" cy="25" r="5" fill="#facc15"></circle>
+      </svg>
+      <span class="brand-name" style="color: var(--text); font-size: 1.4rem; font-weight: 800; letter-spacing: -0.5px;">{SITE.brand} <span style="font-weight: 400; color: var(--muted); display: none;">Blog</span></span>
     </a>
     <nav class="nav" aria-label="Primary">
       {
@@ -19,7 +26,7 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWit
           </a>
         ))
       }
-      <a class="nav-cta" href={SITE.marketingUrl}>{SITE.marketingLabel} ↗</a>
+      <a class="nav-cta" href={SITE.marketingUrl} style="background: transparent; color: var(--accent);">{SITE.marketingLabel} ↗</a>
     </nav>
   </div>
 </header>
