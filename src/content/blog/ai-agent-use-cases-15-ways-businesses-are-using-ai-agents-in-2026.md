@@ -143,7 +143,7 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
 <p style="margin-bottom: 12px; font-size: 1.1rem; line-height: 1.6; color: var(--ink-secondary);">The early wave of AI in business was almost entirely conversational, a chatbot you asked questions of, a tool that summarized a document when prompted. That's still enormously useful, and it's not going anywhere, but it's genuinely the easier half of the story. The more consequential shift already underway is the move toward systems that don't just answer when asked, they act, on a schedule, inside real business tools, with a human checking the final output rather than producing every single piece of it from a blank page.</p>
 <p style="margin-bottom: 12px; font-size: 1.1rem; line-height: 1.6; color: var(--ink-secondary);">None of these points toward AI replacing entire companies or entire teams. It points toward smaller teams being able to credibly do the work of much larger ones.</p>
 
-<h2 id="faq" class="os-h2" style="margin-top: 0px;  margin-bottom: 12px; color: var(--ink-black);">Frequently Asked Questions (FAQ)</h2>
+<h2 id="faq" class="os-h2" style="margin-top: 0px;   margin-bottom: 12px; color: var(--ink-black);">Frequently Asked Questions (FAQ)</h2>
 <details style="margin-bottom: 16px; overflow: hidden; background: transparent; border: none;">
 <summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: var(--candy-pink-soft); border-radius: var(--radius-md); user-select: none; margin-bottom: 4px;">
 Is an AI agent the same thing as a chatbot?
