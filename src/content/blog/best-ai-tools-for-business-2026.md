@@ -48,20 +48,7 @@ Frequently Asked Questions (FAQ)
 <div class="faq-content">
 <p style="margin: 0;"> It depends on your team size and how many recurring, cross-functional workflows you&#39;re trying to run. A single-purpose tool is faster to start with and simpler to evaluate. An orchestration platform takes more setup upfront but pays off when you have several recurring processes that benefit from shared context and a single observability layer, rather than a pile of disconnected tools that don&#39;t talk to each other. </p>
 </div>
-</details> </div> <style>
-/* Hide the default details marker (triangle) in webkit/blink */
-.os-faq-item summary::-webkit-details-marker {
-display: none;
-}
-/* Rotate the '+' to an 'x' when open */
-.os-faq-item[open] .os-faq-icon {
-transform: rotate(45deg);
-color: var(--ink-black);
-}
-.os-faq-item summary:hover {
-background: #f8fafc;
-}
-</style> </section>  <section class="os-card" style="background: #ffffff; border: 1px solid var(--border-medium); border-left: 5px solid var(--candy-pink); padding: 24px 28px; border-radius: var(--radius-lg); margin-top: 24px; box-shadow: var(--shadow-sm);"> <h2 id="conclusion" class="os-h2" style="margin-bottom: 12px; color: var(--ink-black); font-size: 1.75rem; font-weight: 800;"> Bringing It All Together </h2> <div style="display: flex; flex-direction: column; gap: 16px; color: var(--ink-secondary); font-size: 1.1rem; line-height: 1.7;"> <p class="html-content" style="margin: 0;">Winning with AI means picking the right specialized tool for the job. Done right, these systems provide quiet, competent leverage that has the groundwork finished before you even log on.</p> </div> <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 32px;"> <a href="https://ollasuper.com/signup" class="os-btn os-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; padding: 14px 36px; height: 52px; font-size: 1.1rem; box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4); border-radius: 8px; text-decoration: none; color: var(--ink-black) !important;">
+</details> </div>  </section>  <section class="os-card" style="background: #ffffff; border: 1px solid var(--border-medium); border-left: 5px solid var(--candy-pink); padding: 24px 28px; border-radius: var(--radius-lg); margin-top: 24px; box-shadow: var(--shadow-sm);"> <h2 id="conclusion" class="os-h2" style="margin-bottom: 12px; color: var(--ink-black); font-size: 1.75rem; font-weight: 800;"> Bringing It All Together </h2> <div style="display: flex; flex-direction: column; gap: 16px; color: var(--ink-secondary); font-size: 1.1rem; line-height: 1.7;"> <p class="html-content" style="margin: 0;">Winning with AI means picking the right specialized tool for the job. Done right, these systems provide quiet, competent leverage that has the groundwork finished before you even log on.</p> </div> <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 32px;"> <a href="https://ollasuper.com/signup" class="os-btn os-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; padding: 14px 36px; height: 52px; font-size: 1.1rem; box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4); border-radius: 8px; text-decoration: none; color: var(--ink-black) !important;">
 Deploy your AI workforce →
 </a> </div> </section>  <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border-medium); font-size: 1rem; color: var(--ink-secondary); text-align: center;">
 Learn more about building an autonomous AI workforce at <a href="https://ollasuper.com" style="color: var(--candy-pink); text-decoration: underline; font-weight: 600;">ollasuper.com</a>.
