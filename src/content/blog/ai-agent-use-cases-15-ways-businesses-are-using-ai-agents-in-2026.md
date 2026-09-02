@@ -144,7 +144,7 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
 <p style="margin-bottom: 12px; font-size: 1.1rem; line-height: 1.6; color: var(--ink-secondary);">None of these points toward AI replacing entire companies or entire teams. It points toward smaller teams being able to credibly do the work of much larger ones.</p>
 
 <h2 id="faq" class="os-h2" style="margin-top: 24px; margin-bottom: 12px; color: var(--ink-black);">Frequently Asked Questions (FAQ)</h2>
-<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: #ffffff;">
+<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: transparent;">
 <summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: var(--bg-soft); user-select: none;">
 Is an AI agent the same thing as a chatbot?
 </summary>
@@ -153,7 +153,7 @@ Is an AI agent the same thing as a chatbot?
 </div>
 </details>
 
-<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: #ffffff;">
+<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: transparent;">
 <summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: var(--bg-soft); user-select: none;">
 Do AI agents replace employees?
 </summary>
@@ -162,7 +162,7 @@ Do AI agents replace employees?
 </div>
 </details>
 
-<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: #ffffff;">
+<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: transparent;">
 <summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: var(--bg-soft); user-select: none;">
 Which department should adopt AI agents first?
 </summary>

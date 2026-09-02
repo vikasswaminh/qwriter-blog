@@ -120,7 +120,7 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
 <h2 id="faq" class="os-h2" style="margin-bottom: 16px; color: var(--ink-black); font-size: 2rem; font-weight: 800;">Frequently Asked Questions</h2>
 <div style="display: flex; flex-direction: column; gap: 16px;">
 
-<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: #ffffff;">
+<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: transparent;">
 <summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: var(--bg-soft); user-select: none;">
 Is agentic AI the same thing as an AI agent?
 </summary>
@@ -129,7 +129,7 @@ Is agentic AI the same thing as an AI agent?
 </div>
 </details>
 
-<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: #ffffff;">
+<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: transparent;">
 <summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: var(--bg-soft); user-select: none;">
 How is agentic AI different from generative AI?
 </summary>
@@ -138,7 +138,7 @@ How is agentic AI different from generative AI?
 </div>
 </details>
 
-<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: #ffffff;">
+<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: transparent;">
 <summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: var(--bg-soft); user-select: none;">
 Does Agentic AI mean AI is operating with no human oversight?
 </summary>
@@ -147,7 +147,7 @@ Does Agentic AI mean AI is operating with no human oversight?
 </div>
 </details>
 
-<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: #ffffff;">
+<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: transparent;">
 <summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: var(--bg-soft); user-select: none;">
 What kinds of businesses benefit most from agentic AI?
 </summary>
@@ -156,7 +156,7 @@ What kinds of businesses benefit most from agentic AI?
 </div>
 </details>
 
-<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: #ffffff;">
+<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: transparent;">
 <summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: var(--bg-soft); user-select: none;">
 What's the biggest mistake businesses make when adopting agentic AI?
 </summary>
@@ -165,7 +165,7 @@ What's the biggest mistake businesses make when adopting agentic AI?
 </div>
 </details>
 
-<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: #ffffff;">
+<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: transparent;">
 <summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: var(--bg-soft); user-select: none;">
 How is agentic AI different from traditional workflow automation?
 </summary>
@@ -174,7 +174,7 @@ How is agentic AI different from traditional workflow automation?
 </div>
 </details>
 
-<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: #ffffff;">
+<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: transparent;">
 <summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: var(--bg-soft); user-select: none;">
 Is 2026 really different, or is this just the next wave of AI hype?
 </summary>
