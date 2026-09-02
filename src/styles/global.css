@@ -94,7 +94,7 @@ main.container.article-container {
   .home-layout > main { order: 1; }
   .home-layout > .sidebar-left { order: 2; margin-top: 1rem; }
   .home-layout > .sidebar-right { order: 3; margin-top: 1rem; margin-bottom: 2rem; }
-  .sidebar-left, .sidebar-right { display: block; position: static; height: auto; }
+  .sidebar-left, .sidebar-right { display: block; position: static !important; height: auto !important; }
 }
 .sidebar-left, .sidebar-right {
   position: sticky;
