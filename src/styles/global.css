@@ -394,3 +394,114 @@ main.container.article-container {
 
 h1, h2, h3, h4, h5, h6 { scroll-margin-top: 120px; }
 
+
+/* ==========================================================================
+   Mobile Responsiveness (< 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Layout & Containers */
+  .container, .os-container {
+    padding: 0 16px !important;
+  }
+  
+  .os-header-wrapper {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .os-article-wrapper {
+    padding: 1.5rem 0 3rem;
+  }
+  
+  .blog-layout-grid {
+    gap: 32px;
+  }
+  
+  /* Typography */
+  .os-display {
+    font-size: 1.6rem !important;
+    line-height: 1.25;
+    margin-bottom: 1rem !important;
+  }
+  
+  .os-lead {
+    font-size: 1.1rem !important;
+    line-height: 1.5;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  /* Header & Navigation */
+  .header-inner {
+    height: 64px;
+  }
+  
+  .nav {
+    display: none; /* Hidden by default on mobile, handled by JS toggle */
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: color-mix(in srgb, var(--bg) 98%, transparent);
+    backdrop-filter: saturate(150%) blur(8px);
+    flex-direction: column;
+    padding: 1rem 16px 2rem;
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .nav.mobile-open {
+    display: flex;
+  }
+  
+  .nav-cta {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex !important;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    color: var(--text);
+  }
+  
+  /* Table of Contents (TOC) Mobile Adjustments */
+  .blog-sidebar {
+    margin-bottom: 16px !important;
+  }
+  
+  .os-toc-sticky {
+    position: static;
+    top: auto;
+    padding-top: 0;
+    background: #ffffff;
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-md);
+    padding: 16px;
+  }
+  
+  .os-toc-links {
+    max-height: 200px;
+    overflow-y: auto;
+    border-left: none;
+  }
+  
+  .os-toc-link {
+    border-left: 2px solid var(--border-light);
+    margin-left: 0;
+  }
+  
+  .os-author-block {
+    flex-wrap: wrap;
+  }
+}

@@ -18,7 +18,20 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWit
       </svg>
       <span class="brand-name" style="color: var(--text); font-size: 1.4rem; font-weight: 800; letter-spacing: -0.5px;">{SITE.brand} <span style="font-weight: 400; color: var(--muted); display: none;">Blog</span></span>
     </a>
-    <nav class="nav" aria-label="Primary">
+    
+    <button class="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false" style="display: none;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon" style="display: none;">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <nav class="nav" aria-label="Primary" id="primary-nav">
       {
         NAV.map((item) => (
           <a href={item.href} class:list={['nav-link', { active: isActive(item.href) }]}>
@@ -30,3 +43,28 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWit
     </nav>
   </div>
 </header>
+
+<script>
+  const setupMobileMenu = () => {
+    const toggleBtn = document.querySelector('.mobile-menu-toggle');
+    const nav = document.getElementById('primary-nav');
+    const menuIcon = toggleBtn?.querySelector('.menu-icon') as HTMLElement;
+    const closeIcon = toggleBtn?.querySelector('.close-icon') as HTMLElement;
+
+    if (!toggleBtn || !nav) return;
+
+    toggleBtn.addEventListener('click', () => {
+      const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+      toggleBtn.setAttribute('aria-expanded', String(!isExpanded));
+      nav.classList.toggle('mobile-open');
+      
+      if (menuIcon && closeIcon) {
+        menuIcon.style.display = isExpanded ? 'block' : 'none';
+        closeIcon.style.display = isExpanded ? 'none' : 'block';
+      }
+    });
+  };
+
+  document.addEventListener('DOMContentLoaded', setupMobileMenu);
+  document.addEventListener('astro:page-load', setupMobileMenu);
+</script>
