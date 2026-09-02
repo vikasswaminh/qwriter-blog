@@ -42,7 +42,7 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
 
 <section style="margin-bottom: 16px;">
 <h3 id="key-takeaways" style="font-size: 1.5rem; font-weight: 800; color: var(--ink-black); margin-bottom: 24px;">Key Takeaways</h3>
-<div style="display: flex; flex-direction: column; gap: 16px;">
+<div >
 <div style="background: #ffffff; border: 1px solid var(--border-medium); border-left: 4px solid var(--candy-pink); border-radius: var(--radius-md); padding: 16px; box-shadow: var(--shadow-sm);">
 <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--ink-black); margin-bottom: 12px;">AI Agents Act, They Don't Just Chat</h4>
 <p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--ink-secondary); margin: 0;">An AI agent is defined by what it does when nobody's watching: it runs on a schedule or a trigger, reaches into real business tools, and completes multi-step work on its own, unlike a chatbot that only responds when prompted.</p>
@@ -143,7 +143,7 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
 <p style="margin-bottom: 12px; font-size: 1.1rem; line-height: 1.6; color: var(--ink-secondary);">The early wave of AI in business was almost entirely conversational, a chatbot you asked questions of, a tool that summarized a document when prompted. That's still enormously useful, and it's not going anywhere, but it's genuinely the easier half of the story. The more consequential shift already underway is the move toward systems that don't just answer when asked, they act, on a schedule, inside real business tools, with a human checking the final output rather than producing every single piece of it from a blank page.</p>
 <p style="margin-bottom: 12px; font-size: 1.1rem; line-height: 1.6; color: var(--ink-secondary);">None of these points toward AI replacing entire companies or entire teams. It points toward smaller teams being able to credibly do the work of much larger ones.</p>
 
-<h2 id="faq" class="os-h2" style="margin-top: 0px;   margin-bottom: 12px; color: var(--ink-black);">Frequently Asked Questions (FAQ)</h2>
+<h2 id="faq" class="os-h2" style="margin-top: 32px; margin-bottom: 24px; color: var(--ink-black); font-size: 2rem; font-weight: 800;">Frequently Asked Questions</h2>
 <details class="os-faq-item">
 <summary>Is an AI agent the same thing as a chatbot?</summary>
 <div class="faq-content">

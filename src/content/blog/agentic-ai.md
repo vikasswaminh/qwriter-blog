@@ -56,7 +56,7 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
 
 <section style="margin-bottom: 16px;">
 <h3 id="key-takeaways" style="font-size: 1.5rem; font-weight: 800; color: var(--ink-black); margin-bottom: 16px;">Key Takeaways</h3>
-<div style="display: flex; flex-direction: column; gap: 16px;">
+<div >
 <div style="background: #ffffff; border: 1px solid var(--border-medium); border-left: 4px solid var(--candy-pink); border-radius: var(--radius-md); padding: 16px; box-shadow: var(--shadow-sm);">
 <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--ink-black); margin-bottom: 12px;">Agentic AI goes beyond generative AI by planning and acting</h4>
 <p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--ink-secondary); margin: 0;">Agentic AI doesn't just generate answers. It can perceive information, reason through a goal, plan multiple steps, use external tools, act, and continuously adjust based on feedback.</p>
@@ -115,8 +115,8 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
 </article>
 
 <section class="os-faq" style="margin-top: 0px;">
-<h2 id="faq" class="os-h2" style="margin-top: 0px;  margin-bottom: 16px; color: var(--ink-black); font-size: 2rem; font-weight: 800;">Frequently Asked Questions</h2>
-<div style="display: flex; flex-direction: column; gap: 16px;">
+<h2 id="faq" class="os-h2" style="margin-top: 32px; margin-bottom: 24px; color: var(--ink-black); font-size: 2rem; font-weight: 800;">Frequently Asked Questions</h2>
+<div >
 
 <details class="os-faq-item">
 <summary>Is agentic AI the same thing as an AI agent?</summary>
