@@ -92,9 +92,11 @@ const tags = [...counts.entries()].sort((a, b) => b[1] - a[1]);
   }
   .tags-grid::-webkit-scrollbar {
     height: 8px;
+    -webkit-appearance: none;
   }
   .tags-grid::-webkit-scrollbar-track {
-    background: transparent;
+    background: rgba(244, 114, 182, 0.15); /* Always visible light pink track */
+    border-radius: 20px;
   }
   .tags-grid::-webkit-scrollbar-thumb {
     background-color: #f472b6;
