@@ -88,11 +88,10 @@ const tags = [...counts.entries()].sort((a, b) => b[1] - a[1]);
     margin-inline: -1rem;
     scroll-snap-type: x mandatory;
     scrollbar-width: thin;
-    scrollbar-color: #f472b6 transparent;
+    scrollbar-color: #f472b6 rgba(244, 114, 182, 0.15);
   }
   .tags-grid::-webkit-scrollbar {
     height: 8px;
-    -webkit-appearance: none;
   }
   .tags-grid::-webkit-scrollbar-track {
     background: rgba(244, 114, 182, 0.15); /* Always visible light pink track */
