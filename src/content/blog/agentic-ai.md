@@ -13,7 +13,7 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
 
   <header style="margin-bottom: var(--spacing-24); border-bottom: 1px solid var(--border-medium); padding-bottom: var(--spacing-16); width: 100%;">
     <div class="os-caption" style="display: flex; gap: var(--spacing-12); font-weight: 700; color: var(--candy-pink-hover); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: var(--spacing-16); align-items: center; flex-wrap: wrap;">
-      <span class="os-badge os-badge-pink">AI Workforce / Applied AI Fundamentals</span> <span>•</span> <span>2026-08-31</span> <span>•</span> <span>20 min read</span>
+      <span class="os-badge os-badge-pink">AI Workforce</span> <span>•</span> <span>2026-08-31</span> <span>•</span> <span>20 min read</span>
     </div>
     <h1 class="os-display" style="margin-bottom: var(--spacing-12); color: var(--ink-black);">Agentic AI: What It Is, How It Works, and Why It Matters in 2026</h1>
     <p class="os-lead" style="max-width: 1000px; margin-bottom: var(--spacing-12);">Agentic AI isn't another chatbot upgrade system. It’s software that plans, decides, and acts on its own. Here's what agentic AI means, how it works under the hood, and why 2026 is the year it stopped being a buzzword and started running real businesses.</p>
