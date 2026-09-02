@@ -81,7 +81,7 @@ const tags = [...counts.entries()].sort((a, b) => b[1] - a[1]);
     display: flex;
     flex-wrap: nowrap;
     gap: 1.5rem;
-    overflow-x: auto;
+    overflow-x: scroll; /* Force scrollbar track to always exist */
     padding-top: 1rem;
     padding-bottom: 3rem;
     padding-inline: 1rem;
@@ -92,14 +92,18 @@ const tags = [...counts.entries()].sort((a, b) => b[1] - a[1]);
   }
   .tags-grid::-webkit-scrollbar {
     height: 8px;
+    display: block !important;
   }
   .tags-grid::-webkit-scrollbar-track {
-    background: rgba(244, 114, 182, 0.15); /* Always visible light pink track */
+    background: rgba(244, 114, 182, 0.15) !important;
     border-radius: 20px;
+    display: block !important;
   }
   .tags-grid::-webkit-scrollbar-thumb {
-    background-color: #f472b6;
+    background-color: #f472b6 !important;
     border-radius: 20px;
+    display: block !important;
+    visibility: visible !important;
   }
   .tag-card {
     flex: 0 0 320px;
