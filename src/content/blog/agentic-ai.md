@@ -117,7 +117,7 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
 </article>
 
 <section class="os-faq" style="margin-top: 0px;">
-<h2 id="faq" class="os-h2" style="margin-bottom: 16px; color: var(--ink-black); font-size: 2rem; font-weight: 800;">Frequently Asked Questions</h2>
+<h2 id="faq" class="os-h2" style="margin-top: 0px; margin-bottom: 16px; color: var(--ink-black); font-size: 2rem; font-weight: 800;">Frequently Asked Questions</h2>
 <div style="display: flex; flex-direction: column; gap: 16px;">
 
 <details style="margin-bottom: 16px; overflow: hidden; background: transparent; border: none;">
