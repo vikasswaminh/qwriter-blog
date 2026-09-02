@@ -278,6 +278,8 @@ main.container.article-container {
   align-items: start;
 }
 .blog-sidebar, .blog-right-sidebar {
+  scrollbar-color: var(--candy-pink) transparent;
+  scrollbar-width: thin;
   position: sticky;
   top: 100px;
   max-height: calc(100vh - 120px);
@@ -289,7 +291,7 @@ main.container.article-container {
   padding-left: 8px;
 }
 .blog-sidebar::-webkit-scrollbar, .blog-right-sidebar::-webkit-scrollbar { width: 4px; }
-.blog-sidebar::-webkit-scrollbar-thumb, .blog-right-sidebar::-webkit-scrollbar-thumb { background-color: var(--border-medium); border-radius: 4px; }
+.blog-sidebar::-webkit-scrollbar-thumb, .blog-right-sidebar::-webkit-scrollbar-thumb { background-color: var(--candy-pink); border-radius: 4px; }
 .blog-main-column { min-width: 0; }
 
 @media(max-width: 1100px) {
