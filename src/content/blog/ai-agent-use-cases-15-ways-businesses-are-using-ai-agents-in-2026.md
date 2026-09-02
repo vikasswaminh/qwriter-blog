@@ -144,29 +144,29 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
 <p style="margin-bottom: 12px; font-size: 1.1rem; line-height: 1.6; color: var(--ink-secondary);">None of these points toward AI replacing entire companies or entire teams. It points toward smaller teams being able to credibly do the work of much larger ones.</p>
 
 <h2 id="faq" class="os-h2" style="margin-top: 24px; margin-bottom: 12px; color: var(--ink-black);">Frequently Asked Questions (FAQ)</h2>
-<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: transparent;">
-<summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: transparent; user-select: none;">
+<details style="margin-bottom: 16px; overflow: hidden; background: transparent; border: none;">
+<summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: var(--candy-pink-soft); border-radius: var(--radius-md); user-select: none; margin-bottom: 4px;">
 Is an AI agent the same thing as a chatbot?
 </summary>
-<div style="padding: 16px; background: transparent; font-size: 1.05rem; line-height: 1.6; color: var(--ink-secondary); border-top: 1px solid var(--candy-pink);">
+<div style="padding: 16px; background: var(--candy-pink-soft); font-size: 1.05rem; line-height: 1.6; color: var(--ink-secondary); border-radius: var(--radius-md);">
 <p style="margin: 0;">No. A chatbot waits for you to type something and responds once. An agent runs on its own schedule or trigger, reaches real business tools, and completes multi-step work without needing a prompt typed out every single time.</p>
 </div>
 </details>
 
-<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: transparent;">
-<summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: transparent; user-select: none;">
+<details style="margin-bottom: 16px; overflow: hidden; background: transparent; border: none;">
+<summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: var(--candy-pink-soft); border-radius: var(--radius-md); user-select: none; margin-bottom: 4px;">
 Do AI agents replace employees?
 </summary>
-<div style="padding: 16px; background: transparent; font-size: 1.05rem; line-height: 1.6; color: var(--ink-secondary); border-top: 1px solid var(--candy-pink);">
+<div style="padding: 16px; background: var(--candy-pink-soft); font-size: 1.05rem; line-height: 1.6; color: var(--ink-secondary); border-radius: var(--radius-md);">
 <p style="margin: 0;">In the use cases that work well, agents handle the repetitive, well-defined eighty percent of a task while a human retains the judgment-heavy twenty percent, the decisions, the relationships, the final sign-off. The goal across every example above is to give people back time, not removing them from the process entirely.</p>
 </div>
 </details>
 
-<details style="margin-bottom: 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); overflow: hidden; background: transparent;">
-<summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: transparent; user-select: none;">
+<details style="margin-bottom: 16px; overflow: hidden; background: transparent; border: none;">
+<summary style="padding: 16px; font-size: 1.1rem; font-weight: 700; color: var(--ink-black); cursor: pointer; background: var(--candy-pink-soft); border-radius: var(--radius-md); user-select: none; margin-bottom: 4px;">
 Which department should adopt AI agents first?
 </summary>
-<div style="padding: 16px; background: transparent; font-size: 1.05rem; line-height: 1.6; color: var(--ink-secondary); border-top: 1px solid var(--candy-pink);">
+<div style="padding: 16px; background: var(--candy-pink-soft); font-size: 1.05rem; line-height: 1.6; color: var(--ink-secondary); border-radius: var(--radius-md);">
 <p style="margin: 0;">There's no single universal answer, but the businesses that succeed usually start with whichever workflow is currently eating the most hours for the least strategic value, often inbox triage, outbound research, or first-draft reporting, rather than reaching straight for the flashiest possible use case first.</p>
 </div>
 </details>
