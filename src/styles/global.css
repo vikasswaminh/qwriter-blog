@@ -508,3 +508,30 @@ h1, h2, h3, h4, h5, h6 { scroll-margin-top: 120px; }
     flex-wrap: wrap;
   }
 }
+
+/* FAQ Section Styles */
+.os-faq-item {
+  margin-bottom: 16px;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+}
+.os-faq-item summary {
+  padding: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink-black);
+  cursor: pointer;
+  background: var(--candy-pink-soft, #fdf2f8);
+  border-radius: var(--radius-md, 8px);
+  user-select: none;
+  margin-bottom: 4px;
+}
+.os-faq-item .faq-content {
+  padding: 16px;
+  background: var(--candy-pink-soft, #fdf2f8);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--ink-secondary);
+  border-radius: var(--radius-md, 8px);
+}
