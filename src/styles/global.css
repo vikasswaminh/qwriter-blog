@@ -90,8 +90,11 @@ main.container.article-container {
   gap: 2rem;
 }
 @media (max-width: 1024px) {
-  .home-layout { grid-template-columns: 1fr; }
-  .sidebar-left, .sidebar-right { display: none; }
+  .home-layout { display: flex; flex-direction: column; gap: 2rem; }
+  .home-layout > main { order: 1; }
+  .home-layout > .sidebar-left { order: 2; margin-top: 1rem; }
+  .home-layout > .sidebar-right { order: 3; margin-top: 1rem; margin-bottom: 2rem; }
+  .sidebar-left, .sidebar-right { display: block; position: static; height: auto; }
 }
 .sidebar-left, .sidebar-right {
   position: sticky;
