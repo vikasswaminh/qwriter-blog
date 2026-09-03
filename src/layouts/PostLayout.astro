@@ -69,13 +69,16 @@ const jsonLd = {
       function injectSidebars() {
         const grid = document.querySelector('.blog-layout-grid');
         const container = document.getElementById('right-sidebar-content');
-        const leftSidebar = document.querySelector('#left-sidebar-placeholder');
         
         if (grid && container) {
-          // Populate the left sidebar if it exists and is empty
-          if (leftSidebar && leftSidebar.innerHTML.trim() === '') {
+          // Find the left sidebar by class (it's inside the markdown content)
+          const leftSidebar = grid.querySelector('.blog-sidebar');
+          
+          if (leftSidebar) {
+            // Forcefully inject Recent Posts into the left sidebar
             leftSidebar.innerHTML = container.firstElementChild.innerHTML;
           }
+          
           // Inject the right sidebar if not already present
           if (!grid.querySelector('.blog-right-sidebar')) {
             const rightSidebar = container.firstElementChild.cloneNode(true);
