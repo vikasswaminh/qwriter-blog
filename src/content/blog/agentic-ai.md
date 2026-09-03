@@ -8,7 +8,7 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
 ---
 
 <article class="os-section" style="background: var(--warm-cream); padding-top: var(--spacing-24); padding-bottom: 40px;">
-<div class="os-container" style="max-width: 1400px; margin: 0 auto; width: 100%; padding: 0 40px;">
+<div class="os-container" style="max-width: 1560px; margin: 0 auto; width: 100%; padding: 0 40px;">
   <nav aria-label="Breadcrumb" class="os-small" style="color: var(--ink-muted); margin-bottom: var(--spacing-24); display: flex; gap: var(--spacing-8); align-items: center; flex-wrap: wrap;"> <a href="/" style="color: inherit; text-decoration: none;">Home</a> <span>/</span> <a href="/blog" style="color: inherit; text-decoration: none;">Blog</a> <span>/</span> <span style="color: var(--ink-black); font-weight: 600;">AI Workforce</span> </nav>
 
   <header style="margin-bottom: var(--spacing-24); border-bottom: 1px solid var(--border-medium); padding-bottom: var(--spacing-16); width: 100%;">
