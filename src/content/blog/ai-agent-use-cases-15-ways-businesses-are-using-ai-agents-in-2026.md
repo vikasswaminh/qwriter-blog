@@ -16,22 +16,7 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
   </header> 
 
 <div class="blog-layout-grid">
-<aside class="blog-sidebar">
-  <nav style="margin-bottom: var(--spacing-32);">
-    <span style="display: inline-block; padding: 4px 10px; font-size: 10px; font-weight: 800; color: #ffffff; background: linear-gradient(to right, #f472b6, #a81c85); border-radius: 9999px; margin-bottom: 16px; letter-spacing: 0.05em; text-transform: uppercase;">TABLE OF CONTENTS</span>
-    <div style="display: flex; flex-direction: column; gap: 4px; width: 100%;">
-      <a href="#tldr" class="os-toc-link active" style="display: block; padding: 8px 12px; border-radius: 6px; color: var(--ink-secondary); text-decoration: none; font-size: 0.85rem; line-height: 1.3; transition: all 0.15s ease;">TL;DR Summary</a>
-      <a href="#key-takeaways" class="os-toc-link" style="display: block; padding: 8px 12px; border-radius: 6px; color: var(--ink-secondary); text-decoration: none; font-size: 0.85rem; line-height: 1.3; transition: all 0.15s ease;">Key Takeaways</a>
-      <a href="#15-ways-businesses-use-agents" class="os-toc-link" style="display: block; padding: 8px 12px; border-radius: 6px; color: var(--ink-secondary); text-decoration: none; font-size: 0.85rem; line-height: 1.3; transition: all 0.15s ease;">15 Ways Businesses Use Agents</a>
-      <a href="#how-to-pick" class="os-toc-link" style="display: block; padding: 8px 12px; border-radius: 6px; color: var(--ink-secondary); text-decoration: none; font-size: 0.85rem; line-height: 1.3; transition: all 0.15s ease;">How to Pick Your First Use Case</a>
-      <a href="#mistakes" class="os-toc-link" style="display: block; padding: 8px 12px; border-radius: 6px; color: var(--ink-secondary); text-decoration: none; font-size: 0.85rem; line-height: 1.3; transition: all 0.15s ease;">Mistakes That Undermine Adoption</a>
-      <a href="#roi" class="os-toc-link" style="display: block; padding: 8px 12px; border-radius: 6px; color: var(--ink-secondary); text-decoration: none; font-size: 0.85rem; line-height: 1.3; transition: all 0.15s ease;">What the Actual ROI Looks Like</a>
-      <a href="#where-this-is-heading" class="os-toc-link" style="display: block; padding: 8px 12px; border-radius: 6px; color: var(--ink-secondary); text-decoration: none; font-size: 0.85rem; line-height: 1.3; transition: all 0.15s ease;">Where This Is Heading</a>
-      <a href="#faq" class="os-toc-link" style="display: block; padding: 8px 12px; border-radius: 6px; color: var(--ink-secondary); text-decoration: none; font-size: 0.85rem; line-height: 1.3; transition: all 0.15s ease;">Frequently Asked Questions</a>
-      <a href="#conclusion" class="os-toc-link" style="display: block; padding: 8px 12px; border-radius: 6px; color: var(--ink-secondary); text-decoration: none; font-size: 0.85rem; line-height: 1.3; transition: all 0.15s ease;">Bringing It All Together</a>
-    </div>
-  </nav>
-</aside>
+<aside class="blog-sidebar" id="left-sidebar-placeholder"></aside>
 
 <div class="blog-main-column">
 

@@ -66,20 +66,29 @@ const jsonLd = {
 
   <script is:inline>
     (function() {
-      function injectRightSidebar() {
+      function injectSidebars() {
         const grid = document.querySelector('.blog-layout-grid');
         const container = document.getElementById('right-sidebar-content');
-        if (grid && container && !grid.querySelector('.blog-right-sidebar')) {
-          const sidebar = container.firstElementChild.cloneNode(true);
-          grid.appendChild(sidebar);
+        const leftSidebar = document.querySelector('#left-sidebar-placeholder');
+        
+        if (grid && container) {
+          // Populate the left sidebar if it exists and is empty
+          if (leftSidebar && leftSidebar.innerHTML.trim() === '') {
+            leftSidebar.innerHTML = container.firstElementChild.innerHTML;
+          }
+          // Inject the right sidebar if not already present
+          if (!grid.querySelector('.blog-right-sidebar')) {
+            const rightSidebar = container.firstElementChild.cloneNode(true);
+            grid.appendChild(rightSidebar);
+          }
         }
       }
       if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', injectRightSidebar);
+        document.addEventListener('DOMContentLoaded', injectSidebars);
       } else {
-        injectRightSidebar();
+        injectSidebars();
       }
-      document.addEventListener('astro:page-load', injectRightSidebar);
+      document.addEventListener('astro:page-load', injectSidebars);
     })();
   </script>
 

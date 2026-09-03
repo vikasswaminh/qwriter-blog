@@ -21,31 +21,7 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
   </header>
 
 <div class="blog-layout-grid">
-<aside class="blog-sidebar">
-<nav style="margin-bottom: var(--spacing-32);">
-<span style="display: inline-block; padding: 4px 10px; font-size: 10px; font-weight: 800; color: #ffffff; background: linear-gradient(to right, #f472b6, #a81c85); border-radius: 9999px; margin-bottom: 16px; letter-spacing: 0.05em; text-transform: uppercase;">TABLE OF CONTENTS</span>
-<div style="display: flex; flex-direction: column; gap: 4px; width: 100%;">
-<a href="#tldr" class="os-toc-link">TL;DR Summary</a>
-<a href="#key-takeaways" class="os-toc-link">Key Takeaways</a>
-<a href="#everyone-s-saying-agentic-now-almost-nobody-agreed-on-what-it-means-first-" class="os-toc-link">Everyone's Saying "Agentic" Now. Almost Nobody Agreed on What It Means First.</a>
-<a href="#what-agentic-actually-means" class="os-toc-link">What "Agentic" Actually Means</a>
-<a href="#agentic-ai-ai-agents-assistants-and-automation-untangling-the-terms" class="os-toc-link">Agentic AI, AI Agents, Assistants, and Automation: Untangling the Terms</a>
-<a href="#what-s-actually-running-under-the-hood" class="os-toc-link">What's Actually Running Under the Hood</a>
-<a href="#why-autonomous-never-means-unsupervised-and-why-that-s-a-feature-not-a-flaw" class="os-toc-link">Why "Autonomous" Never Means "Unsupervised” And Why That's a Feature, not a Flaw</a>
-<a href="#why-2026-specifically" class="os-toc-link">Why 2026 Specifically</a>
-<a href="#where-agentic-ai-is-actually-working-right-now" class="os-toc-link">Where Agentic AI Is Actually Working Right Now</a>
-<a href="#what-agentic-ai-looks-like-depending-on-the-size-and-shape-of-your-business" class="os-toc-link">What Agentic AI Looks Like Depending on the Size and Shape of Your Business</a>
-<a href="#multi-agent-systems-when-one-agent-isn-t-the-whole-answer" class="os-toc-link">Multi-Agent Systems: When One Agent Isn't the Whole Answer</a>
-<a href="#the-honest-risks-nobody-puts-in-the-demo" class="os-toc-link">The Honest Risks Nobody Puts in the Demo</a>
-<a href="#a-practical-way-to-adopt-this-without-getting-burned" class="os-toc-link">A Practical Way to Adopt This Without Getting Burned</a>
-<a href="#what-to-actually-look-for-if-you-re-evaluating-a-platform" class="os-toc-link">What to Actually Look for If You're Evaluating a Platform</a>
-<a href="#how-to-spot-a-real-agentic-system-from-marketing-dressed-up-as-one" class="os-toc-link">How to Spot a Real Agentic System from Marketing Dressed Up as One</a>
-<a href="#where-this-is-headed" class="os-toc-link">Where This Is Headed</a>
-<a href="#bringing-it-all-together" class="os-toc-link">Bringing It All Together</a>
-<a href="#faq" class="os-toc-link">Frequently Asked Questions</a>
-</div>
-</nav>
-</aside>
+<aside class="blog-sidebar" id="left-sidebar-placeholder"></aside>
 
 <div class="blog-main-column">
 
