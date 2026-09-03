@@ -17,7 +17,10 @@ const allPosts = await getCollection('blog');
 const otherPosts = allPosts
   .filter((p) => p.slug !== post.slug)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 5);
+  .slice(0, 6);
+
+const leftPosts = otherPosts.slice(0, 3);
+const rightPosts = otherPosts.slice(3, 6);
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -47,14 +50,29 @@ const jsonLd = {
 >
   <slot />
   
+  <div id="left-sidebar-content" style="display: none;" aria-hidden="true">
+    <nav style="margin-bottom: var(--spacing-32);">
+      <span style="display: inline-block; padding: 4px 10px; font-size: 10px; font-weight: 800; color: #ffffff; background: linear-gradient(to right, #f472b6, #a81c85); border-radius: 9999px; margin-bottom: 16px; letter-spacing: 0.05em; text-transform: uppercase;">
+        More Articles
+      </span>
+      <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
+        {leftPosts.map((p) => (
+          <a href={`/blog/${p.slug}`} class="os-toc-link" style="display: block; padding: 12px 16px; border-radius: 8px; color: var(--ink-secondary); text-decoration: none; font-size: 0.95rem; font-weight: 600; line-height: 1.4; transition: all 0.15s ease; border: 1px solid var(--border-light); background: #ffffff; box-shadow: var(--shadow-sm);">
+            {p.data.title}
+          </a>
+        ))}
+      </div>
+    </nav>
+  </div>
+
   <div id="right-sidebar-content" style="display: none;" aria-hidden="true">
     <aside class="blog-right-sidebar">
       <nav style="margin-bottom: var(--spacing-32);">
         <span style="display: inline-block; padding: 4px 10px; font-size: 10px; font-weight: 800; color: #ffffff; background: linear-gradient(to right, #f472b6, #a81c85); border-radius: 9999px; margin-bottom: 16px; letter-spacing: 0.05em; text-transform: uppercase;">
-          Recent Posts
+          Latest Insights
         </span>
         <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
-          {otherPosts.map((p) => (
+          {rightPosts.map((p) => (
             <a href={`/blog/${p.slug}`} class="os-toc-link" style="display: block; padding: 12px 16px; border-radius: 8px; color: var(--ink-secondary); text-decoration: none; font-size: 0.95rem; font-weight: 600; line-height: 1.4; transition: all 0.15s ease; border: 1px solid var(--border-light); background: #ffffff; box-shadow: var(--shadow-sm);">
               {p.data.title}
             </a>
@@ -68,20 +86,21 @@ const jsonLd = {
     (function() {
       function injectSidebars() {
         const grid = document.querySelector('.blog-layout-grid');
-        const container = document.getElementById('right-sidebar-content');
+        const rightContainer = document.getElementById('right-sidebar-content');
+        const leftContainer = document.getElementById('left-sidebar-content');
         
-        if (grid && container) {
+        if (grid && rightContainer) {
           // Find the left sidebar by class (it's inside the markdown content)
           const leftSidebar = grid.querySelector('.blog-sidebar');
           
-          if (leftSidebar) {
-            // Forcefully inject Recent Posts into the left sidebar
-            leftSidebar.innerHTML = container.firstElementChild.innerHTML;
+          if (leftSidebar && leftContainer) {
+            // Forcefully inject left posts into the left sidebar
+            leftSidebar.innerHTML = leftContainer.innerHTML;
           }
           
           // Inject the right sidebar if not already present
           if (!grid.querySelector('.blog-right-sidebar')) {
-            const rightSidebar = container.firstElementChild.cloneNode(true);
+            const rightSidebar = rightContainer.firstElementChild.cloneNode(true);
             grid.appendChild(rightSidebar);
           }
         }
