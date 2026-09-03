@@ -3,7 +3,7 @@ title: "Multi-Agent Systems: What They Are and How They Work"
 description: "Agentic AI isn't another chatbot upgrade system. It’s software that plans, decides, and acts on its own. Here's what agentic AI means, how it works under the hood, and why 2026 is the year it stopped being a buzzword and started running real businesses."
 pubDate: 2026-09-01
 author: "OllaSuper Systems Engineering"
-cover: "/agentic_ai_cover.jpg"
+cover: "/agentic_ai_cover.webp"
 tags: ["AI Workforce", "Applied AI Fundamentals"]
 ---
 

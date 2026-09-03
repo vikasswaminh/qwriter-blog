@@ -39,7 +39,7 @@ const rest = posts.slice(1);
           <a class="featured" href={`/blog/${featured.slug}/`}>
             <div class="featured-media">
               {featured.data.cover ? (
-                <img src={featured.data.cover} alt="" class="featured-img" />
+                <img src={featured.data.cover} alt="" class="featured-img" width="1200" height="630" loading="eager" decoding="async" />
               ) : (
                 <div class="featured-img-placeholder"></div>
               )}
