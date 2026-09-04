@@ -4,7 +4,7 @@ description: "Agentic AI isn't another chatbot upgrade system. It’s software t
 pubDate: 2026-09-02
 author: "OllaSuper Systems Engineering"
 cover: "/agentic_ai_cover.webp"
-tags: ['Multi-Agent Systems', 'Swarm AI', 'Agent Orchestration']
+tags: ["AI Workforce", "Applied AI Fundamentals"]
 ---
 
 <article class="os-section" style="background: var(--warm-cream); padding-top: var(--spacing-24); padding-bottom: 40px;">
