@@ -2,6 +2,7 @@
 title: "AI Agent Security: Risks, Threats, and Best Practices"
 description: "AI agents don't just talk, they act. They send emails, touch CRMs, and move data. Here's the real threat landscape behind agentic AI, from prompt injection to excessive agency, and the practical, unglamorous framework for deploying agents safely."
 pubDate: 2026-09-04
+updatedDate: 2026-09-04
 author: 'OllaSuper Systems Engineering'
 tags: ['Security & Governance']
 seoKeywords: ['AI Agent Security', 'Prompt Injection Defense', 'AI Governance']

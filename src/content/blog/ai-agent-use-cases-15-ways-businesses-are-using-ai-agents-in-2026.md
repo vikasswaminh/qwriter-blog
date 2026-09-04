@@ -2,6 +2,7 @@
 title: "AI Agent Use Cases: 15 Ways Businesses Are Using AI Agents in 2026"
 description: "From outbound sales to fraud detection, here are 15 real ways businesses are putting AI agents to work in 2026, what each one looks like day to day, and how to know if your business is ready for it."
 pubDate: 2026-09-03
+updatedDate: 2026-09-04
 author: "OllaSuper Systems Engineering"
 cover: "/agentic_ai_cover.webp"
 tags: ["AI Workforce", "Applied AI Fundamentals"]

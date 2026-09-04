@@ -2,6 +2,7 @@
 title: 'AI Agents vs AI Assistants: What''s the Difference?'
 description: 'AI agent and AI assistant get used interchangeably in almost every product pitch, and that''s a problem, because they do fundamentally different jobs. Here''s the real distinction, explained without the marketing haze.'
 pubDate: 2026-08-21
+updatedDate: 2026-09-04
 author: 'OllaSuper Systems Engineering'
 tags: ["AI Workforce", "Applied AI Fundamentals"]
 seoKeywords: ['AI Agents vs Assistants', 'Generative AI', 'Agentic Workflows']
