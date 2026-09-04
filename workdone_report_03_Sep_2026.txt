@@ -1,0 +1,40 @@
+HIMANI DEBNATH
+september 03/26
+
+Today’s work on the OllaSuper Blog included the following:
+
+1. Executed a major structural redesign to widen the main blog content container from 1400px to 1560px for better readability. Converted the Table of Contents sidebar layout into a dual-sidebar post feed system, displaying "Essential Guides" on the left and "Agent Workflows" on the right.
+
+2. Updated the internal blog generation script (`build_post.cjs`) to automatically inject the new 1560px container width and the dynamic left-sidebar structure into all future blog posts.
+
+3. Refactored the "AI Agent Security" blog post by successfully extracting the Frequently Asked Questions section out of the main article body and placing it as a dedicated, standalone section right above the CTA card.
+
+4. Successfully implemented a comprehensive 5-point Core Web Vitals performance optimization pass across the site (without modifying design):
+   - Font Loading Latency: Added CSS preload links for Google Fonts to prevent text render-blocking.
+   - JavaScript Payload Size: Applied the `defer` attribute to the inline sidebar rendering scripts.
+   - Image Payload & WebP Optimisation: Converted massive .jpg cover images to highly optimized .webp formats via a custom Node script, and added `loading="eager"` and `decoding="async"` attributes to featured images.
+   - Layout Stability (CLS): Added explicit `width` and `height` properties to featured images to prevent content shifts while downloading.
+   - Server Response Time (TTFB): Enabled Astro's native `prefetch` feature to pre-load internal pages in the background on hover.
+
+5. Investigated and fixed a Flexbox CSS bug on the homepage that was causing the featured cover images to compress vertically, ensuring they now stretch gracefully to match adjacent text content.
+
+6. Corrected a site-wide publish date synchronization issue by writing a custom Node script to extract the original dates from each post's YAML frontmatter. Successfully applied a custom, chronological date mapping (Aug 20 to Sep 03) across all 8 blog posts precisely per requirements.
+
+7. All structural changes, performance optimization scripts, and content updates were committed and pushed successfully to the `main` branch.
+
+FINAL OUTCOME
+=================
+
+The OllaSuper Engineering Blog now provides:
+
+- A wider, highly readable 1560px main content layout.
+- Engaging dual-sidebar related post feeds replacing the static Table of Contents.
+- Improved Core Web Vitals with blazing fast TTFB, minimized JavaScript/Image payloads, and zero layout shift (CLS).
+- Perfectly aligned and proportioned responsive images across all flexbox containers.
+- Guaranteed date accuracy mapping identically across both metadata and visible HTML headers.
+- Successful deployment of all configuration, design, and performance standardizations.
+
+
+Latest commit: `8753ccb`
+Status: Completed & Deployed
+Live site: https://blogs.ollasuper.com/blog
