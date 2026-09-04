@@ -4,6 +4,7 @@ description: "AI agents don't just talk, they act. They send emails, touch CRMs,
 pubDate: 2026-09-04
 author: 'OllaSuper Systems Engineering'
 tags: ['Security & Governance']
+seoKeywords: ['AI Agent Security', 'Prompt Injection Defense', 'AI Governance']
 cover: "/agentic_ai_cover.webp"
 ---
 

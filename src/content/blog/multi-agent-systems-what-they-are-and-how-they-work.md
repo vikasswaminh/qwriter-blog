@@ -5,6 +5,7 @@ pubDate: 2026-09-02
 author: "OllaSuper Systems Engineering"
 cover: "/agentic_ai_cover.webp"
 tags: ["AI Workforce", "Applied AI Fundamentals"]
+seoKeywords: ['Multi-Agent Systems', 'Swarm AI', 'Agent Orchestration']
 ---
 
 <article class="os-section" style="background: var(--warm-cream); padding-top: var(--spacing-24); padding-bottom: 40px;">
