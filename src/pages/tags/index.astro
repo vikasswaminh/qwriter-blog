@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import PostCard from '../../components/PostCard.astro';
 import { getPublishedPosts, readingTime } from '../../utils/posts';
 
 const posts = await getPublishedPosts();
@@ -15,60 +14,140 @@ for (const p of posts) {
   }
 }
 
-// Sort tags alphabetically
-const sortedTags = [...tagsMap.keys()].sort();
+// Sort tags by number of posts (descending)
+const sortedTags = [...tagsMap.keys()].sort((a, b) => tagsMap.get(b).length - tagsMap.get(a).length);
+
+const featuredTags = sortedTags.slice(0, 2);
+const regularTags = sortedTags.slice(2);
+const totalArticles = posts.length;
+const totalTopics = sortedTags.length;
 ---
 
 <BaseLayout title="Tags" description="Browse posts by topic.">
   <div class="tags-page-container">
-    <div class="tags-header">
+    <header class="tags-header">
+      <div class="tags-eyebrow">
+        <span class="square-dot"></span>
+        <span>TOPICS & SPECIALS</span>
+        <span class="eyebrow-line"></span>
+      </div>
       <h1 class="tags-title">Explore <span class="text-gradient">Topics</span></h1>
-      <p class="tags-subtitle">Browse our collection of guides, insights, and resources by category.</p>
-    </div>
+      <p class="tags-subtitle">Explore technical guides, insights, and workflows organized by topic.</p>
+      
+      <div class="tags-stats-bar">
+        <div class="stat-item">
+          <span class="stat-num">{totalTopics}</span>
+          <span class="stat-lbl">Active Topics</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">{totalArticles}</span>
+          <span class="stat-lbl">Published Guides</span>
+        </div>
+      </div>
+    </header>
 
     {sortedTags.length === 0 && <p class="empty">No topics found.</p>}
     
-    <div class="tags-content">
-      {sortedTags.map(tag => (
-        <section class="tag-section">
-          <div class="tag-section-header">
-            <h2 class="tag-section-title">{tag}</h2>
-            <span class="tag-count-badge">{tagsMap.get(tag).length} {tagsMap.get(tag).length === 1 ? 'Article' : 'Articles'}</span>
-          </div>
-          <div class="post-list">
-            {tagsMap.get(tag).map((p) => (
-              <PostCard
-                url={`/blog/${p.slug}/`}
-                title={p.data.title}
-                description={p.data.description}
-                pubDate={p.data.pubDate}
-                tags={p.data.tags}
-                minutes={readingTime(p.body)}
-              />
-            ))}
-          </div>
-        </section>
-      ))}
-    </div>
+    {featuredTags.length > 0 && (
+      <section class="specials-section">
+        <h2 class="section-heading">Featured Specials</h2>
+        <div class="specials-grid">
+          {featuredTags.map((tag, i) => (
+            <div class={`special-card ${i === 0 ? 'special-card--orange' : 'special-card--purple'}`}>
+              <div class="special-card-header">
+                <span class={`badge-pill ${i === 0 ? 'badge-pill--orange' : 'badge-pill--purple'}`}>FEATURED COLLECTION</span>
+                <span class="count-pill">{tagsMap.get(tag).length} Articles</span>
+              </div>
+              <h3>{tag}</h3>
+              <p>Essential guides, technical breakdowns, and strategic insights related to {tag}.</p>
+              <ul class="special-post-list">
+                {tagsMap.get(tag).map(p => (
+                  <li>
+                    <a href={`/blog/${p.slug}/`}>
+                      <span class="post-title-text">{p.data.title}</span>
+                      <span class="read-time">{readingTime(p.body)}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <a href={`/tags/${tag}/`} class={`special-view-link ${i === 0 ? 'special-view-link--orange' : 'special-view-link--purple'}`}>
+                View All {tag} &rarr;
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {regularTags.length > 0 && (
+      <section class="topics-section">
+        <h2 class="section-heading">All Topics</h2>
+        <div class="topics-grid">
+          {regularTags.map(tag => (
+            <div class="topic-card">
+              <div class="topic-card-top">
+                <a href={`/tags/${tag}/`} class="topic-tag-name">#{tag.toLowerCase().replace(/\s+/g, '-')}</a>
+                <span class="topic-count-pill">{tagsMap.get(tag).length} {tagsMap.get(tag).length === 1 ? 'article' : 'articles'}</span>
+              </div>
+              <ul class="topic-post-list">
+                {tagsMap.get(tag).slice(0, 4).map(p => (
+                  <li>
+                    <a href={`/blog/${p.slug}/`}>{p.data.title}</a>
+                  </li>
+                ))}
+                {tagsMap.get(tag).length > 4 && (
+                  <li class="more-items">+ {tagsMap.get(tag).length - 4} more guides...</li>
+                )}
+              </ul>
+              <a href={`/tags/${tag}/`} class="topic-card-link">
+                View all in #{tag.toLowerCase().replace(/\s+/g, '-')} &rarr;
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
   </div>
 </BaseLayout>
 
 <style>
   .tags-page-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 3rem 2rem;
   }
+  
+  /* Header & Stats */
   .tags-header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
+  }
+  .tags-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--ink-muted);
+    margin-bottom: 1rem;
+  }
+  .square-dot {
+    width: 6px;
+    height: 6px;
+    background: #f472b6;
+  }
+  .eyebrow-line {
+    width: 30px;
+    height: 1px;
+    background: rgba(0,0,0,0.1);
   }
   .tags-title {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     font-weight: 800;
     color: var(--ink-black);
     letter-spacing: -0.03em;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
   .text-gradient {
     background: linear-gradient(135deg, #f472b6, #a81c85);
@@ -76,54 +155,270 @@ const sortedTags = [...tagsMap.keys()].sort();
     -webkit-text-fill-color: transparent;
   }
   .tags-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     color: var(--ink-muted);
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 2.5rem;
     line-height: 1.6;
   }
-  
-  .tags-content {
+  .tags-stats-bar {
+    display: inline-flex;
+    background: #fdf2f8;
+    border: 1px solid rgba(244, 114, 182, 0.2);
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    gap: 3rem;
+  }
+  .stat-item {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
-    padding-bottom: 5rem;
-  }
-  
-  .tag-section-header {
-    display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 2px solid rgba(244, 114, 182, 0.2);
   }
-  
-  .tag-section-title {
-    font-size: 1.6rem;
+  .stat-num {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #a81c85;
+  }
+  .stat-lbl {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    letter-spacing: 0.05em;
+  }
+
+  /* Section Headings */
+  .section-heading {
+    font-size: 1.5rem;
     font-weight: 800;
     color: var(--ink-black);
-    margin: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(0,0,0,0.05);
+    padding-bottom: 0.5rem;
   }
-  
-  .tag-count-badge {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: #a81c85;
-    background: var(--candy-pink-soft);
-    padding: 0.25rem 0.8rem;
-    border-radius: 999px;
+  .specials-section {
+    margin-bottom: 5rem;
   }
-  
-  .post-list {
+
+  /* Specials Grid */
+  .specials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
   }
+  .special-card {
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .special-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.04);
+  }
   
+  /* Orange Theme (using a warm pink/orange gradient to fit brand) */
+  .special-card--orange {
+    background: linear-gradient(180deg, #fff5f5, #ffffff);
+    border-color: rgba(251, 146, 60, 0.2);
+  }
+  .badge-pill--orange {
+    background: rgba(251, 146, 60, 0.1);
+    color: #c2410c;
+  }
+  .special-view-link--orange {
+    color: #c2410c;
+    background: rgba(251, 146, 60, 0.05);
+  }
+  
+  /* Purple/Pink Theme */
+  .special-card--purple {
+    background: linear-gradient(180deg, #fdf2f8, #ffffff);
+    border-color: rgba(244, 114, 182, 0.3);
+  }
+  .badge-pill--purple {
+    background: rgba(244, 114, 182, 0.15);
+    color: #a81c85;
+  }
+  .special-view-link--purple {
+    color: #a81c85;
+    background: rgba(244, 114, 182, 0.05);
+  }
+
+  .special-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .badge-pill, .count-pill {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.25rem 0.6rem;
+    border-radius: 99px;
+    letter-spacing: 0.05em;
+  }
+  .count-pill {
+    background: #f1f5f9;
+    color: #475569;
+  }
+  .special-card h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--ink-black);
+    margin-bottom: 0.5rem;
+  }
+  .special-card p {
+    font-size: 0.95rem;
+    color: var(--ink-muted);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  .special-post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    flex-grow: 1;
+  }
+  .special-post-list li {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+  }
+  .special-post-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  .special-post-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--ink-black);
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+    transition: color 0.2s;
+  }
+  .special-post-list a:hover {
+    color: #f472b6;
+  }
+  .read-time {
+    font-size: 0.75rem;
+    color: var(--ink-muted);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .special-view-link {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: background 0.2s;
+  }
+  .special-view-link:hover {
+    background: rgba(0,0,0,0.05);
+  }
+
+  /* Topics Grid */
+  .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  .topic-card {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s, border-color 0.2s;
+  }
+  .topic-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.03);
+    border-color: rgba(244, 114, 182, 0.4);
+  }
+  .topic-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+  }
+  .topic-tag-name {
+    font-family: 'Martian Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #a81c85;
+    text-decoration: none;
+  }
+  .topic-tag-name:hover {
+    text-decoration: underline;
+  }
+  .topic-count-pill {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 0.2rem 0.6rem;
+    border-radius: 99px;
+  }
+  .topic-post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    flex-grow: 1;
+  }
+  .topic-post-list li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .topic-post-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #cbd5e1;
+  }
+  .topic-post-list a {
+    color: var(--ink-black);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .topic-post-list a:hover {
+    color: #f472b6;
+  }
+  .more-items {
+    font-style: italic;
+    color: var(--ink-muted);
+    font-size: 0.85rem;
+  }
+  .more-items::before {
+    display: none;
+  }
+  .topic-card-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #a81c85;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .topic-card-link:hover {
+    color: #f472b6;
+  }
+
   @media (max-width: 768px) {
-    .tags-page-container { padding: 3rem 1.5rem; }
-    .tags-title { font-size: 2.75rem; }
-    .post-list { grid-template-columns: 1fr; }
+    .tags-page-container { padding: 2rem 1rem; }
+    .tags-title { font-size: 2.25rem; }
+    .specials-grid { grid-template-columns: 1fr; }
   }
 </style>
