@@ -9,7 +9,7 @@ interface Props {
   headings?: { depth: number; slug: string; text: string }[];
 }
 const { post } = Astro.props;
-const { title, description, pubDate, updatedDate, author, tags, seoKeywords, cover } = post.data;
+const { title, seoTitle, description, pubDate, updatedDate, author, tags, seoKeywords, cover } = post.data;
 
 const canonical = new URL(`/blog/${post.slug}/`, Astro.site).href;
 
@@ -34,10 +34,35 @@ const jsonLd = {
   mainEntityOfPage: canonical,
   ...(cover ? { image: new URL(cover, Astro.site).href } : {}),
 };
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'OllaSuper',
+      item: 'https://blogs.ollasuper.com/'
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Blog',
+      item: 'https://blogs.ollasuper.com/blog/'
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: title,
+      item: canonical
+    }
+  ]
+};
 ---
 
 <BaseLayout
-  title={title}
+  title={seoTitle || title}
   description={description}
   image={cover}
   className="article-container"
@@ -115,4 +140,5 @@ const jsonLd = {
   </script>
 
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
 </BaseLayout>
