@@ -7,6 +7,7 @@ updatedDate: 2026-09-07
 author: "OllaSuper Systems Engineering"
 tags: ["AI Workforce", "Applied AI Fundamentals"]
 seoKeywords: ["build an AI agent", "AI agent for business", "how to create an AI agent", "AI agent step by step", "AI workforce", "autonomous AI agents", "AI agent architecture", "AI agent for small business", "AI agent tools", "deploy AI agent"]
+cover: "/ai-workforce-agents-cover.jpg"
 ---
 
 <article class="os-section" style="background: var(--warm-cream); padding-top: var(--spacing-48); padding-bottom: 100px;">
