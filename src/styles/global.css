@@ -356,26 +356,6 @@ main.container.article-container {
   box-shadow: 0 4px 20px rgba(0,0,0,0.03);
 }
 
-.os-diagram {
-  margin: 32px 0;
-  border: 1px solid var(--border-medium);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: var(--shadow-sm);
-}
-.os-diagram img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.os-diagram figcaption {
-  padding: 12px;
-  background: var(--warm-cream);
-  border-top: 1px solid var(--border-medium);
-  font-size: 0.9rem;
-  color: var(--ink-muted);
-  text-align: center;
-}
 
 /* Prose */
 .prose { font-size: 1.1rem; line-height: 1.8; color: var(--text-soft); }
