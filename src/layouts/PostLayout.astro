@@ -77,12 +77,12 @@ const breadcrumbLd = {
   
   <div id="left-sidebar-content" style="display: none;" aria-hidden="true">
     <nav style="margin-bottom: var(--spacing-32);">
-      <span style="display: inline-block; padding: 4px 10px; font-size: 10px; font-weight: 800; color: #ffffff; background: linear-gradient(to right, #f472b6, #a81c85); border-radius: 9999px; margin-bottom: 16px; letter-spacing: 0.05em; text-transform: uppercase;">
+      <span style="display: inline-block; padding: 4px 10px; font-size: 10px; font-weight: 800; color: #ffffff; background: linear-gradient(to right, var(--color-primary), var(--color-primary-hover)); border-radius: 9999px; margin-bottom: 16px; letter-spacing: 0.05em; text-transform: uppercase;">
         Essential Guides
       </span>
       <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
         {leftPosts.map((p) => (
-          <a href={`/blog/${p.slug}`} class="os-toc-link" style="display: block; padding: 12px 16px; border-radius: 8px; color: var(--ink-secondary); text-decoration: none; font-size: 0.95rem; font-weight: 600; line-height: 1.4; transition: all 0.15s ease; border: 1px solid var(--border-light); background: #ffffff; box-shadow: var(--shadow-sm);">
+          <a href={`/blog/${p.slug}`} class="os-toc-link" style="display: block; padding: 12px 16px; border-radius: 8px; color: var(--color-body); text-decoration: none; font-size: 0.95rem; font-weight: 600; line-height: 1.4; transition: all 0.15s ease; border: 1px solid var(--color-border-light); background: #ffffff; box-shadow: var(--shadow-sm);">
             {p.data.title}
           </a>
         ))}
@@ -93,12 +93,12 @@ const breadcrumbLd = {
   <div id="right-sidebar-content" style="display: none;" aria-hidden="true">
     <aside class="blog-right-sidebar">
       <nav style="margin-bottom: var(--spacing-32);">
-        <span style="display: inline-block; padding: 4px 10px; font-size: 10px; font-weight: 800; color: #ffffff; background: linear-gradient(to right, #f472b6, #a81c85); border-radius: 9999px; margin-bottom: 16px; letter-spacing: 0.05em; text-transform: uppercase;">
+        <span style="display: inline-block; padding: 4px 10px; font-size: 10px; font-weight: 800; color: #ffffff; background: linear-gradient(to right, var(--color-primary), var(--color-primary-hover)); border-radius: 9999px; margin-bottom: 16px; letter-spacing: 0.05em; text-transform: uppercase;">
           Agent Workflows
         </span>
         <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
           {rightPosts.map((p) => (
-            <a href={`/blog/${p.slug}`} class="os-toc-link" style="display: block; padding: 12px 16px; border-radius: 8px; color: var(--ink-secondary); text-decoration: none; font-size: 0.95rem; font-weight: 600; line-height: 1.4; transition: all 0.15s ease; border: 1px solid var(--border-light); background: #ffffff; box-shadow: var(--shadow-sm);">
+            <a href={`/blog/${p.slug}`} class="os-toc-link" style="display: block; padding: 12px 16px; border-radius: 8px; color: var(--color-body); text-decoration: none; font-size: 0.95rem; font-weight: 600; line-height: 1.4; transition: all 0.15s ease; border: 1px solid var(--color-border-light); background: #ffffff; box-shadow: var(--shadow-sm);">
               {p.data.title}
             </a>
           ))}

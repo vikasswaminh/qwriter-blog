@@ -129,13 +129,13 @@ const totalTopics = sortedTags.length;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.1em;
-    color: var(--ink-muted);
+    color: var(--color-muted);
     margin-bottom: 1rem;
   }
   .square-dot {
     width: 6px;
     height: 6px;
-    background: #f472b6;
+    background: var(--color-primary);
   }
   .eyebrow-line {
     width: 30px;
@@ -145,25 +145,25 @@ const totalTopics = sortedTags.length;
   .tags-title {
     font-size: 2.8rem;
     font-weight: 800;
-    color: var(--ink-black);
+    color: var(--color-heading);
     letter-spacing: -0.03em;
     margin-bottom: 1rem;
   }
   .text-gradient {
-    background: linear-gradient(135deg, #f472b6, #a81c85);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .tags-subtitle {
     font-size: 1.15rem;
-    color: var(--ink-muted);
+    color: var(--color-muted);
     max-width: 600px;
     margin: 0 auto 2.5rem;
     line-height: 1.6;
   }
   .tags-stats-bar {
     display: inline-flex;
-    background: #fdf2f8;
+    background: var(--color-section);
     border: 1px solid rgba(244, 114, 182, 0.2);
     border-radius: 12px;
     padding: 1rem 2rem;
@@ -177,13 +177,13 @@ const totalTopics = sortedTags.length;
   .stat-num {
     font-size: 1.5rem;
     font-weight: 800;
-    color: #a81c85;
+    color: var(--color-primary-hover);
   }
   .stat-lbl {
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: var(--ink-muted);
+    color: var(--color-muted);
     letter-spacing: 0.05em;
   }
 
@@ -191,7 +191,7 @@ const totalTopics = sortedTags.length;
   .section-heading {
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--ink-black);
+    color: var(--color-heading);
     margin-bottom: 1.5rem;
     border-bottom: 2px solid rgba(0,0,0,0.05);
     padding-bottom: 0.5rem;
@@ -235,15 +235,15 @@ const totalTopics = sortedTags.length;
   
   /* Purple/Pink Theme */
   .special-card--purple {
-    background: linear-gradient(180deg, #fdf2f8, #ffffff);
+    background: linear-gradient(180deg, var(--color-section), #ffffff);
     border-color: rgba(244, 114, 182, 0.3);
   }
   .badge-pill--purple {
     background: rgba(244, 114, 182, 0.15);
-    color: #a81c85;
+    color: var(--color-primary-hover);
   }
   .special-view-link--purple {
-    color: #a81c85;
+    color: var(--color-primary-hover);
     background: rgba(244, 114, 182, 0.05);
   }
 
@@ -267,12 +267,12 @@ const totalTopics = sortedTags.length;
   .special-card h3 {
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--ink-black);
+    color: var(--color-heading);
     margin-bottom: 0.5rem;
   }
   .special-card p {
     font-size: 0.95rem;
-    color: var(--ink-muted);
+    color: var(--color-muted);
     line-height: 1.5;
     margin-bottom: 1.5rem;
   }
@@ -297,18 +297,18 @@ const totalTopics = sortedTags.length;
     align-items: baseline;
     gap: 1rem;
     text-decoration: none;
-    color: var(--ink-black);
+    color: var(--color-heading);
     font-size: 0.95rem;
     font-weight: 600;
     line-height: 1.4;
     transition: color 0.2s;
   }
   .special-post-list a:hover {
-    color: #f472b6;
+    color: var(--color-primary);
   }
   .read-time {
     font-size: 0.75rem;
-    color: var(--ink-muted);
+    color: var(--color-muted);
     font-weight: 500;
     white-space: nowrap;
   }
@@ -355,7 +355,7 @@ const totalTopics = sortedTags.length;
     font-family: 'Martian Mono', monospace;
     font-size: 0.9rem;
     font-weight: 700;
-    color: #a81c85;
+    color: var(--color-primary-hover);
     text-decoration: none;
   }
   .topic-tag-name:hover {
@@ -389,17 +389,17 @@ const totalTopics = sortedTags.length;
     color: #cbd5e1;
   }
   .topic-post-list a {
-    color: var(--ink-black);
+    color: var(--color-heading);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s;
   }
   .topic-post-list a:hover {
-    color: #f472b6;
+    color: var(--color-primary);
   }
   .more-items {
     font-style: italic;
-    color: var(--ink-muted);
+    color: var(--color-muted);
     font-size: 0.85rem;
   }
   .more-items::before {
@@ -408,12 +408,12 @@ const totalTopics = sortedTags.length;
   .topic-card-link {
     font-size: 0.85rem;
     font-weight: 600;
-    color: #a81c85;
+    color: var(--color-primary-hover);
     text-decoration: none;
     transition: color 0.2s;
   }
   .topic-card-link:hover {
-    color: #f472b6;
+    color: var(--color-primary);
   }
 
   @media (max-width: 768px) {

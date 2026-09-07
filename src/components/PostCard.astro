@@ -10,11 +10,21 @@ interface Props {
   minutes?: number;
 }
 const { url, title, description, pubDate, tags = [], minutes } = Astro.props;
+
+function getTagColor(tag: string) {
+  const t = tag.toLowerCase();
+  if (t === 'ai workforce') return '#ff8000';
+  if (t === 'guide' || t === 'guides') return '#E3256B';
+  const hash = tag.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+  const colors = ['#7C3AED', '#2563EB', '#0284C7', '#059669', '#D97706', '#0891B2', '#4F46E5', '#0D9488', '#F59E0B', '#E11D48'];
+  return colors[hash % colors.length];
+}
+const tagColor = tags.length > 0 ? getTagColor(tags[0]) : 'var(--border)';
 ---
 
-<article class="post-card">
+<article class="post-card" style={`--card-accent: ${tagColor};`}>
   {tags.length > 0 && (
-    <span class="post-card-tag">{tags[0]}</span>
+    <span class="post-card-tag" style="background: var(--card-accent)">{tags[0]}</span>
   )}
   <h2 class="post-card-title"><a href={url}>{title}</a></h2>
   <p class="post-card-desc">{description}</p>

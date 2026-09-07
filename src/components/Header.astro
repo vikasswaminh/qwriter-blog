@@ -4,6 +4,11 @@ const path = Astro.url.pathname;
 const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
 ---
 
+<a href="https://ollasuper.com/" class="top-banner">
+  <span class="top-banner-badge">NEW</span>
+  <span class="top-banner-text">Deploy your AI workforce today and start scaling your team &rarr;</span>
+</a>
+
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/">
@@ -16,7 +21,7 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWit
         <circle cx="14.02" cy="55" r="5" fill="#0066ff"></circle>
         <circle cx="14.02" cy="25" r="5" fill="#facc15"></circle>
       </svg>
-      <span class="brand-name" style="color: var(--text); font-size: 1.4rem; font-weight: 800; letter-spacing: -0.5px;">{SITE.brand} <span style="font-weight: 400; color: var(--muted); display: none;">Blog</span></span>
+      <span class="brand-name" style="color: var(--color-heading); font-size: 1.4rem; font-weight: 800; letter-spacing: -0.5px;">{SITE.brand} <span style="font-weight: 400; color: var(--color-muted); display: none;">Blog</span></span>
     </a>
     
     <button class="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false" style="display: none;">
@@ -39,7 +44,7 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWit
           </a>
         ))
       }
-      <a class="nav-cta" href={SITE.marketingUrl} style="background: transparent; color: var(--accent);">{SITE.marketingLabel} ↗</a>
+      <a class="nav-cta" href={SITE.marketingUrl} style="background: transparent; color: #DC143C;">{SITE.marketingLabel} ↗</a>
     </nav>
   </div>
 </header>
