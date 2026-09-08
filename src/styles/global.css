@@ -85,7 +85,7 @@ img {
 }
 
 main.container {
-  padding-top: 2.5rem;
+  padding-top: 1.25rem;
   padding-bottom: 3rem;
 }
 
@@ -145,7 +145,7 @@ main.container.article-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 60px;
 }
 
 .brand {
