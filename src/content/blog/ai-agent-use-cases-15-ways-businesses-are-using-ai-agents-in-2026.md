@@ -21,39 +21,39 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
 
 <div class="blog-main-column">
 
-<section style="background: #ffffff; border: 1px solid var(--color-border); border-left: 5px solid var(--color-primary); border-radius: 10px; padding: 20px; margin-bottom: var(--spacing-16); box-shadow: var(--shadow-sm);">
-<h3 id="tldr" style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary-hover); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;"><span>⚡</span> TL;DR</h3>
+<section style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 12px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
+<h3 id="tldr" style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary-hover); margin-bottom: 4px; display: flex; align-items: center; gap: 8px;"><span>⚡</span> TL;DR</h3>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-heading); margin: 0;">AI agents stopped being a concept somewhere around 2025 and turned into something businesses run in the background, every day, without thinking twice about it. Not chatbots that wait for a prompt, but systems that work on a schedule, touch real tools like your CRM and inbox, and hand a finished draft to a human for a final yes before anything goes out the door. None of them replaces your team. All of it gives your team back the hours that repetitive, well-defined work was quietly eating every single week.</p>
 </section>
 
 <section style="margin-bottom: 16px;">
 <h3 id="key-takeaways" style="font-size: 1.5rem; font-weight: 800; color: var(--color-heading); margin-bottom: 24px;">Key Takeaways</h3>
 <div >
-<div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 12px;">AI Agents Act, They Don't Just Chat</h4>
+<div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
+<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">AI Agents Act, They Don't Just Chat</h4>
 <p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">An AI agent is defined by what it does when nobody's watching: it runs on a schedule or a trigger, reaches into real business tools, and completes multi-step work on its own, unlike a chatbot that only responds when prompted.</p>
 </div>
-<div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 12px;">The Best Use Cases Are Repetitive, Frequent, and Well-Defined</h4>
+<div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
+<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">The Best Use Cases Are Repetitive, Frequent, and Well-Defined</h4>
 <p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">Businesses get the most value from AI agents on tasks that happen often, follow a recognizable pattern, and eat hours without needing constant creative judgment, things like outbound research, inbox triage, reconciliation, and reporting.</p>
 </div>
-<div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 12px;">Human Approval Gates Are What Make This Safe</h4>
+<div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
+<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Human Approval Gates Are What Make This Safe</h4>
 <p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">The businesses succeeding with agents in 2026 aren't the ones giving AI unrestricted access. They're the ones who let agents research, draft, and prepare, while keeping a human sign-off step for anything that leaves the building.</p>
 </div>
-<div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 12px;">Every Department Has an Agent Use Case Now</h4>
+<div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
+<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Every Department Has an Agent Use Case Now</h4>
 <p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">Sales, marketing, HR, finance, legal, engineering, support, and operations all have workflows mature enough to hand to an agent in 2026. This isn't a sales-and-marketing story anymore, it's a whole-company story.</p>
 </div>
-<div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 12px;">Multi-Agent Collaboration Is Where the Real Compounding Happens</h4>
+<div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
+<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Multi-Agent Collaboration Is Where the Real Compounding Happens</h4>
 <p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">The single biggest shift in 2026 isn't one agent doing one task well, its specialized agents handing work to each other the way departments hand work between people, producing finished deliverables instead of isolated outputs.</p>
 </div>
 </div>
 </section>
 
 <div class="blog-content" style="display: flex; flex-direction: column; gap: var(--spacing-16); line-height: 1.8; font-size: 1.08rem; color: var(--color-body);">
-<article class="os-article-content" style="padding: 16px 24px; background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+<article class="os-article-content" style="padding: 16px 24px; background: transparent; border: none;">
 
 <p style="margin-bottom: 12px; font-size: 1.1rem; line-height: 1.6; color: var(--color-body);">Picture this. It's a Wednesday morning and a mid-sized company's ops lead opens their laptop expecting the usual pile-up. Except the pile-up isn't there. Overnight, a research agent already pulled twenty-five qualified leads and dropped them into the CRM with verified emails and LinkedIn profiles attached. A finance agent already reconciled yesterday's Stripe payouts against the books and flagged two discrepancies worth a look. A support agent already answered thirty-one routine tickets and queued the four tricky ones for a human. Nobody asked any of these systems to do this work. It just happened, because that's the job they were built for.</p>
 

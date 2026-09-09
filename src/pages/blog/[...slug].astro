@@ -9,21 +9,10 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content, headings } = await post.render();
-
-function getTagColor(tag: string) {
-  const t = tag.toLowerCase();
-  if (t === 'ai workforce') return '#ff8000';
-  if (t === 'guide' || t === 'guides') return '#E3256B';
-  const hash = tag.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
-  const colors = ['#7C3AED', '#2563EB', '#0284C7', '#059669', '#D97706', '#0891B2', '#4F46E5', '#0D9488', '#F59E0B', '#E11D48'];
-  return colors[hash % colors.length];
-}
-
-const tagColor = post.data.tags && post.data.tags.length > 0 ? getTagColor(post.data.tags[0]) : 'var(--accent)';
 ---
 
 <PostLayout post={post} headings={headings}>
-  <div style={`--accent: ${tagColor}; --candy-pink: ${tagColor}; --candy-pink-hover: ${tagColor}; --color-primary: ${tagColor}; --color-primary-hover: ${tagColor};`}>
+  <div style="--color-heading: var(--brand-heading); --color-body: var(--brand-body); --color-muted: var(--brand-muted); --color-section: var(--brand-section-bg); --bg-card: var(--brand-background); --color-primary: var(--brand-primary); --color-primary-hover: var(--brand-rich); --accent: var(--brand-primary); --candy-pink: var(--brand-primary); --candy-pink-hover: var(--brand-rich);">
     <Content />
   </div>
 </PostLayout>

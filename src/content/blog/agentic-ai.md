@@ -27,39 +27,39 @@ seoKeywords: ['Agentic AI Explained', 'Autonomous Systems', 'AI Innovation']
 
 <div class="blog-main-column">
 
-<section style="background: #ffffff; border: 1px solid var(--color-border); border-left: 5px solid var(--color-primary); border-radius: 10px; padding: 20px; margin-bottom: var(--spacing-16); box-shadow: var(--shadow-sm);">
-<h3 id="tldr" style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary-hover); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;"><span>⚡</span> TL;DR</h3>
+<section style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 12px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
+<h3 id="tldr" style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary-hover); margin-bottom: 4px; display: flex; align-items: center; gap: 8px;"><span>⚡</span> TL;DR</h3>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-heading); margin: 0;">Agentic AI is software that doesn't just respond to you it perceives a situation, reasons through it, plans a sequence of steps, and executes them using real tools, with minimal hand holding along the way. It's the difference between an AI that writes you an email and an AI that researches the recipient, drafts the email, checks it against your tone guidelines, and queues it for your one click approval on its own, on a schedule, before you even asked. This piece breaks down what "agentic" actually means (as opposed to marketing dressed up in the word), the architecture running underneath a real agentic system perception, memory, planning, tool use, action, feedback where businesses are already using this in 2026, what's genuinely new about this moment versus the last three years of AI hype, the honest risks nobody puts in the pitch deck, and a practical way to think about adopting it without getting burned.</p>
 </section>
 
 <section style="margin-bottom: 16px;">
 <h3 id="key-takeaways" style="font-size: 1.5rem; font-weight: 800; color: var(--color-heading); margin-bottom: 16px;">Key Takeaways</h3>
 <div >
-<div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 12px;">Agentic AI goes beyond generative AI by planning and acting</h4>
+<div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
+<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Agentic AI goes beyond generative AI by planning and acting</h4>
 <p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">Agentic AI doesn't just generate answers. It can perceive information, reason through a goal, plan multiple steps, use external tools, act, and continuously adjust based on feedback.</p>
 </div>
-<div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 12px;">Agentic AI works through a perceive → reason → plan → act → feedback loop</h4>
+<div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
+<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Agentic AI works through a perceive → reason → plan → act → feedback loop</h4>
 <p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">A real agentic system combines goals, perception, memory, reasoning, planning, tool use, action, and feedback. This architecture is what separates an AI agent from a basic chatbot or assistant.</p>
 </div>
-<div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 12px;">Agentic AI is different from AI assistants and traditional automation</h4>
+<div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
+<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Agentic AI is different from AI assistants and traditional automation</h4>
 <p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">Generative AI responds to prompts, assistants help humans’ complete tasks, and traditional automation follows predefined rules. Agentic AI can independently decide what steps to take toward a defined goal, making it more flexible for complex workflows.</p>
 </div>
-<div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 12px;">Businesses are using agentic AI for sales, marketing, support, research, and operations</h4>
+<div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
+<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Businesses are using agentic AI for sales, marketing, support, research, and operations</h4>
 <p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">High-value use cases include AI-powered sales research, lead and pipeline monitoring, SEO auditing, customer-support triage, competitive research, invoice reconciliation, compliance monitoring, and recurring business workflows.</p>
 </div>
-<div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 12px;">Successful agentic AI adoption requires human oversight, security, and clear boundaries</h4>
+<div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
+<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Successful agentic AI adoption requires human oversight, security, and clear boundaries</h4>
 <p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">The strongest approach isn't completely unsupervised AI. Businesses should use approval gates, least-privilege access, audit logs, defined scopes, shadow testing, and human ownership for consequential actions.</p>
 </div>
 </div>
 </section>
 
 <div class="blog-content" style="display: flex; flex-direction: column; gap: var(--spacing-16); line-height: 1.8; font-size: 1.08rem; color: var(--color-body);">
-<article class="os-article-content" style="padding: 16px 24px; background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+<article class="os-article-content" style="padding: 16px 24px; background: transparent; border: none;">
 
 <h2 id="everyone-s-saying-agentic-now-almost-nobody-agreed-on-what-it-means-first-" class="os-h2" style="margin-top: 24px; margin-bottom: 12px; color: var(--color-heading);">Everyone's Saying "Agentic" Now. Almost Nobody Agreed on What It Means First.</h2>
 <p style="margin-bottom: 12px; font-size: 1.1rem; line-height: 1.6; color: var(--color-body);">Scroll through any tech conference agenda, any SaaS homepage, any LinkedIn feed populated by people who put "AI" in their job title sometime in the last two years, and you'll trip over the word "agentic" roughly every four sentences. Agentic workflows. Agentic AI platforms. Agentic this, agentic that. It's become the default adjective for anything that wants to sound more advanced than a chatbot, whether it is. That's a problem, because underneath the marketing noise, something genuinely different has happened in how AI systems get built and deployed. It's just gotten buried under a word that's been stretched to cover everything from "we added a few if then rules to our chatbot" to "we built a system that runs unattended for six hours, calls fourteen different tools, and produces a finished deliverable a human only has to review, not write." Those are wildly different things, and if you're a business owner, a founder, or someone whose job now includes the phrase "figure out what we should do with AI," the gap between them is exactly where your budget either gets well spent or quietly wasted. This piece exists to close that gap. Not with more buzzwords, but with a straight explanation: what agentic AI actually is, the mechanics running underneath it, why the label has attached itself so hard to 2026 specifically, where it's already changing how real companies operate, and just as importantly where it can go wrong if you deploy it carelessly. By the end, you should be able to tell the difference between an agentic AI system and a chatbot with a rebrand just by asking three or four sharp questions. That's the goal.</p>
