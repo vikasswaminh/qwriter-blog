@@ -10,6 +10,10 @@ export async function getPublishedPosts(): Promise<CollectionEntry<'blog'>[]> {
 
 /** Rough reading time in minutes from raw markdown body. */
 export function readingTime(body: string): number {
+  const match = body.match(/<span>(\d+)\s*min\s*read<\/span>/);
+  if (match) {
+    return parseInt(match[1], 10);
+  }
   const words = body.trim().split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.round(words / 200));
 }

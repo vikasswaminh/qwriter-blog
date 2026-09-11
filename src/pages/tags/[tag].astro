@@ -17,8 +17,11 @@ const { posts, tag } = Astro.props;
 ---
 
 <BaseLayout title={`#${tag}`} description={`Posts tagged ${tag}.`}>
-  <p class="post-eyebrow"><a href="/tags/">← All tags</a></p>
-  <h1 class="page-title">#{tag}</h1>
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+    <p class="post-eyebrow" style="margin: 0;"><a href="/">← Back to blogs</a></p>
+    <p class="post-eyebrow" style="margin: 0;"><a href="/tags/">All tags →</a></p>
+  </div>
+  <h1 class="page-title" style="margin-top: 0;">#{tag}</h1>
   <div class="post-list">
     {
       posts.map((p) => (

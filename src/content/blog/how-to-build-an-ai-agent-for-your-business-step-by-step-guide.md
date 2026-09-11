@@ -42,8 +42,8 @@ cover: "/ai-workforce-agents-cover.jpg"
 <div class="blog-layout-grid">
 <aside class="blog-sidebar" id="left-sidebar-placeholder"></aside>
 <div class="blog-main-column">
-<div class="blog-content" style="display: flex; flex-direction: column; gap: var(--spacing-32); line-height: 1.8; font-size: 1.08rem; color: var(--color-body);">
-<article class="os-article-content" style="padding: 24px 32px; background: transparent; border: none;">
+<div class="blog-content" style="display: flex; flex-direction: column; gap: var(--spacing-32); line-height: 1.8; font-size: 1.1rem; color: var(--color-body);">
+<article class="os-article-content" style="padding: 40px; background: #ffffff; border: 1px solid var(--color-border); border-radius: 10px; box-shadow: var(--shadow-sm);">
 
 <section style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 12px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
 <h3 id="tldr" style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary-hover); margin-bottom: 4px; display: flex; align-items: center; gap: 8px;"><span>⚡</span> TL;DR</h3>
@@ -56,23 +56,23 @@ cover: "/ai-workforce-agents-cover.jpg"
 <div>
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
 <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Start narrow, not companywide</h4>
-<p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">Your first AI agent should handle one clearly defined, recurring, mostly mechanical task, not an entire department. Narrow builds are easier to trust, easier to test, and easier to expand later.</p>
+<p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">Your first AI agent should handle one clearly defined, recurring, mostly mechanical task, not an entire department. Narrow builds are easier to trust, easier to test, and easier to expand later.</p>
 </div>
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
 <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Map the process before you automate it</h4>
-<p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">Understand exactly how the task gets done today, including its edge cases and exceptions, before designing anything. Automating an undefined or inconsistent process just scales the inconsistency.</p>
+<p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">Understand exactly how the task gets done today, including its edge cases and exceptions, before designing anything. Automating an undefined or inconsistent process just scales the inconsistency.</p>
 </div>
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
 <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">The approval gate is the most important design decision you'll make</h4>
-<p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">Let the agent handle research, drafting, and analysis fully on its own, but route anything that touches a real customer, a public page, or a financial record through a human checkpoint until the agent has earned real trust.</p>
+<p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">Let the agent handle research, drafting, and analysis fully on its own, but route anything that touches a real customer, a public page, or a financial record through a human checkpoint until the agent has earned real trust.</p>
 </div>
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
 <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Test in shadow mode before you trust it live</h4>
-<p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">Run the agent quietly against real situations for a couple of weeks, comparing its output to what a human would have done, before letting anything it produces go live unsupervised.</p>
+<p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">Run the agent quietly against real situations for a couple of weeks, comparing its output to what a human would have done, before letting anything it produces go live unsupervised.</p>
 </div>
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
 <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Log everything and expand deliberately</h4>
-<p class="html-content" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-body); margin: 0;">A clear, reviewable audit trail protects you the day something goes wrong, and proving value on one well-scoped task before building the next one is what turns a single agent into a genuine, trustworthy AI workforce over time.</p>
+<p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">A clear, reviewable audit trail protects you the day something goes wrong, and proving value on one well-scoped task before building the next one is what turns a single agent into a genuine, trustworthy AI workforce over time.</p>
 </div>
 </div>
 </section>
@@ -251,14 +251,12 @@ cover: "/ai-workforce-agents-cover.jpg"
 </section>
 
 <section class="os-card" style="background: #ffffff; border: 1px solid var(--color-border); border-left: 5px solid var(--color-primary); padding: 24px 28px; border-radius: var(--radius-md); margin-top: 24px; box-shadow: var(--shadow-sm);">
-<h2 id="conclusion" class="os-h2" style="margin-bottom: 12px; color: var(--color-heading); font-size: 1.75rem; font-weight: 800;">Bringing It All Together</h2>
-<div style="display: flex; flex-direction: column; gap: 16px; color: var(--color-body); font-size: 1.1rem; line-height: 1.7;">
-<p class="html-content" style="margin: 0;">Building an AI agent for your business is not fundamentally a technical challenge, even though it involves plenty of technical decisions along the way. It is fundamentally a discipline challenge: the discipline to pick one narrow, honest task rather than everything at once, the discipline to map how that task really happens before automating a guess at it, the discipline to define exactly where human judgment still belongs and refuse to let that line quietly drift, and the discipline to test quietly and log everything before trusting anything with real consequence.</p>
+<h2 id="conclusion" class="os-h2" style="margin-bottom: 12px; color: var(--color-heading); font-size: 1.75rem; font-weight: 800; text-align: center !important;"> Bringing It All Together </h2> <div style="display: flex; flex-direction: column; gap: 16px; color: var(--color-body); font-size: 1.1rem; line-height: 1.7;"> <p class="html-content" style="margin: 0; text-align: center;">Building an AI agent for your business is not fundamentally a technical challenge, even though it involves plenty of technical decisions along the way. It is fundamentally a discipline challenge: the discipline to pick one narrow, honest task rather than everything at once, the discipline to map how that task really happens before automating a guess at it, the discipline to define exactly where human judgment still belongs and refuse to let that line quietly drift, and the discipline to test quietly and log everything before trusting anything with real consequence.</p>
 <p class="html-content" style="margin: 0;">Get that discipline right, and the technical pieces, perception, memory, reasoning, tool connections, output, approval gates, fall into place far more easily than most people expect walking in. Skip it, and even the most technically sophisticated agent build tends to disappoint, not because the technology failed, but because nobody defined clearly enough what success was supposed to look like.</p>
 <p class="html-content" style="margin: 0;">The businesses quietly winning with agentic AI right now are not the loudest ones in the room. They are the ones who picked a real, specific, recurring headache, built something narrow and honest to fix it, watched it closely before trusting it, and only then, carefully, started building the next one.</p>
 </div>
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 32px;">
-<a href="https://ollasuper.com/signup" class="os-btn os-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; padding: 14px 36px; height: 52px; font-size: 1.1rem; box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4); border-radius: 8px; text-decoration: none; color: var(--color-heading) !important;">
+<a href="https://ollasuper.com/signup" class="os-btn os-btn-primary" style="background: #cf2121; display: inline-flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; padding: 10px 24px; height: 42px; font-size: 0.95rem; box-shadow: 0 6px 20px rgba(207, 33, 33, 0.4); border-radius: 8px; text-decoration: none; color: #ffffff !important;">
                 Deploy Your Workspace Today →
 </a>
 </div>

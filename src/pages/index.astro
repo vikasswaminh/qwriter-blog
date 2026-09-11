@@ -9,6 +9,8 @@ const posts = await getPublishedPosts();
 const featured = posts[0];
 const rest = posts.slice(1);
 
+const allTags = [...new Set(posts.flatMap(p => p.data.tags || []))].sort();
+
 function getTagColor(tag: string) {
   const t = tag.toLowerCase();
   if (t === 'ai workforce') return '#ff8000';
@@ -30,10 +32,20 @@ function getTagColor(tag: string) {
       </ul>
     </aside>
 
-    <main class="main-content">
+    <main class="main-content" style="min-width: 0;">
       <section class="hero">
         <h1 class="hero-title">{SITE.brand} <span style="color: var(--accent);">Blog</span></h1>
         <p class="hero-tagline">{SITE.description}</p>
+        
+        {allTags.length > 0 && (
+          <div class="hero-tags" style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 20px; max-width: 100%;">
+            {allTags.map((tag) => (
+              <a href={`/tags/${tag}/`} style={`font-size: 0.8rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; background: transparent; color: ${getTagColor(tag)}; border: 1px solid ${getTagColor(tag)}80; text-decoration: none; transition: all 0.2s ease; white-space: nowrap;`} onmouseover={`this.style.background='${getTagColor(tag)}15'; this.style.borderColor='${getTagColor(tag)}'`} onmouseout={`this.style.background='transparent'; this.style.borderColor='${getTagColor(tag)}80'`}>
+                #{tag}
+              </a>
+            ))}
+          </div>
+        )}
       </section>
 
       <div class="section-header">

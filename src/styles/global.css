@@ -1,9 +1,9 @@
 :root {
-  --accent: #E8443A;
+  --accent: #cf2121;
   /* OllaGraph Red */
-  --accent-red: #D03830;
-  --accent-purple: #E8443A;
-  --accent-hover: #D03830;
+  --accent-red: #cf2121;
+  --accent-purple: #cf2121;
+  --accent-hover: #cf2121;
   --bg: #F8FAFC;
   --bg-card: #ffffff;
   --bg-soft: #F1F5F9;
@@ -41,8 +41,8 @@
 
   /* Brand */
   --brand-dark: #1A0D0D;
-  --brand-primary: #B4162F;
-  --brand-rich: #A00000;
+  --brand-primary: #cf2121;
+  --brand-rich: #cf2121;
 
   /* Gradient */
   --brand-gradient: linear-gradient(
@@ -559,6 +559,34 @@ main.container.article-container {
 @media (max-width: 640px) {
   .post-list {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .post-card {
+    padding: 1rem;
+    border-radius: 0.9rem;
+  }
+
+  .post-card-tag {
+    font-size: 0.58rem;
+    padding: 0.18rem 0.5rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .post-card-title {
+    font-size: 1rem;
+    min-height: unset;
+    line-height: 1.35;
+  }
+
+  .post-card-desc {
+    font-size: 0.8rem;
+    line-height: 1.45;
+    min-height: unset;
+  }
+
+  .post-card-meta {
+    font-size: 0.72rem;
   }
 }
 
@@ -916,11 +944,11 @@ main.container.article-container {
 
 .blog-content p {
   font-family: 'Lato', sans-serif !important;
-  font-size: 1rem !important;
-  line-height: 1.6 !important;
+  font-size: 1.1rem !important;
+  line-height: 1.7 !important;
+  letter-spacing: 0 !important;
   font-weight: 400 !important;
-  color: #1f2937 !important;
-  margin-bottom: 12px !important;
+  margin-bottom: 16px !important;
 }
 
 .blog-content h1,
