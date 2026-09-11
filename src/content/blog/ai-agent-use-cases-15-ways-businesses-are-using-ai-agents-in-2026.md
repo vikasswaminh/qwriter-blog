@@ -27,26 +27,26 @@ tags: ["AI Workforce", "Applied AI Fundamentals"]
 </section>
 
 <section style="margin-bottom: 16px;">
-<h3 id="key-takeaways" style="font-size: 1.5rem; font-weight: 800; color: var(--color-heading); margin-bottom: 24px;">Key Takeaways</h3>
+<h3 id="key-takeaways" style="font-size: 1.5rem; font-weight: 800; color: #cf2121; margin-bottom: 24px;">Key Takeaways</h3>
 <div >
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">AI Agents Act, They Don't Just Chat</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">AI Agents Act, They Don't Just Chat</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">An AI agent is defined by what it does when nobody's watching: it runs on a schedule or a trigger, reaches into real business tools, and completes multi-step work on its own, unlike a chatbot that only responds when prompted.</p>
 </div>
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">The Best Use Cases Are Repetitive, Frequent, and Well-Defined</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">The Best Use Cases Are Repetitive, Frequent, and Well-Defined</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">Businesses get the most value from AI agents on tasks that happen often, follow a recognizable pattern, and eat hours without needing constant creative judgment, things like outbound research, inbox triage, reconciliation, and reporting.</p>
 </div>
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Human Approval Gates Are What Make This Safe</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">Human Approval Gates Are What Make This Safe</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">The businesses succeeding with agents in 2026 aren't the ones giving AI unrestricted access. They're the ones who let agents research, draft, and prepare, while keeping a human sign-off step for anything that leaves the building.</p>
 </div>
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Every Department Has an Agent Use Case Now</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">Every Department Has an Agent Use Case Now</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">Sales, marketing, HR, finance, legal, engineering, support, and operations all have workflows mature enough to hand to an agent in 2026. This isn't a sales-and-marketing story anymore, it's a whole-company story.</p>
 </div>
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Multi-Agent Collaboration Is Where the Real Compounding Happens</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">Multi-Agent Collaboration Is Where the Real Compounding Happens</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">The single biggest shift in 2026 isn't one agent doing one task well, its specialized agents handing work to each other the way departments hand work between people, producing finished deliverables instead of isolated outputs.</p>
 </div>
 </div>

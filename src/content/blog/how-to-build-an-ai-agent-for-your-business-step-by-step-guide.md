@@ -52,26 +52,26 @@ cover: "/ai-workforce-agents-cover.jpg"
 
 
 <section style="margin-bottom: 16px;">
-<h3 id="key-takeaways" style="font-size: 1.5rem; font-weight: 800; color: var(--color-heading); margin-bottom: 16px;">Key Takeaways</h3>
+<h3 id="key-takeaways" style="font-size: 1.5rem; font-weight: 800; color: #cf2121; margin-bottom: 16px;">Key Takeaways</h3>
 <div>
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Start narrow, not companywide</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">Start narrow, not companywide</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">Your first AI agent should handle one clearly defined, recurring, mostly mechanical task, not an entire department. Narrow builds are easier to trust, easier to test, and easier to expand later.</p>
 </div>
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Map the process before you automate it</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">Map the process before you automate it</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">Understand exactly how the task gets done today, including its edge cases and exceptions, before designing anything. Automating an undefined or inconsistent process just scales the inconsistency.</p>
 </div>
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">The approval gate is the most important design decision you'll make</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">The approval gate is the most important design decision you'll make</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">Let the agent handle research, drafting, and analysis fully on its own, but route anything that touches a real customer, a public page, or a financial record through a human checkpoint until the agent has earned real trust.</p>
 </div>
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Test in shadow mode before you trust it live</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">Test in shadow mode before you trust it live</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">Run the agent quietly against real situations for a couple of weeks, comparing its output to what a human would have done, before letting anything it produces go live unsupervised.</p>
 </div>
 <div style="background: var(--bg-card); border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; box-shadow: 0 2px 8px -2px rgba(0,0,0,0.05);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Log everything and expand deliberately</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">Log everything and expand deliberately</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">A clear, reviewable audit trail protects you the day something goes wrong, and proving value on one well-scoped task before building the next one is what turns a single agent into a genuine, trustworthy AI workforce over time.</p>
 </div>
 </div>

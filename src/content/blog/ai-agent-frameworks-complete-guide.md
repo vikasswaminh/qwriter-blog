@@ -60,26 +60,26 @@ AI agent frameworks are the invisible scaffolding behind every serious autonomou
 </section>
 
 <section style="margin-bottom: 24px;">
-<h3 id="key-takeaways" style="font-size: 1.5rem; font-weight: 800; color: var(--color-heading); margin-bottom: 24px;">
+<h3 id="key-takeaways" style="font-size: 1.5rem; font-weight: 800; color: #cf2121; margin-bottom: 24px;">
 Key Takeaways
 </h3> <div style="display: flex; flex-direction: column; gap: 16px;"> <div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px 20px; margin-bottom: 12px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Key Point</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">Key Point</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">An AI agent framework provides reusable scaffolding, memory, tool calling, reasoning loops, and orchestration that turns a raw language model into a reliable working agent without a team having to build that plumbing from scratch every time.</p>
 </div>
 <div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px 20px; margin-bottom: 12px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">The major frameworks differ mainly in philosophy, not just features.</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">The major frameworks differ mainly in philosophy, not just features.</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">Some favor explicit graph-based control, some favor conversational multi-agent collaboration, and some favor a simple role-based structure.</p>
 </div>
 <div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px 20px; margin-bottom: 12px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Start with a single, well-tooled agent before reaching for multi-agent orchestration.</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">Start with a single, well-tooled agent before reaching for multi-agent orchestration.</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">Complexity should be earned by the actual shape of the task.</p>
 </div>
 <div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px 20px; margin-bottom: 12px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Key Point</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">Key Point</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">Observability and approval gates are not optional extras; they are the core safety mechanism that makes agentic AI trustworthy enough for real business work.</p>
 </div>
 <div style="background: #ffffff; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); padding: 16px 20px; margin-bottom: 12px; box-shadow: var(--shadow-sm);">
-<h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-heading); margin-bottom: 4px;">Framework choice is important, but it is rarely permanent.</h4>
+<h4 style="font-size: 1.15rem; font-weight: 800; color: #cf2121; margin-bottom: 4px;">Framework choice is important, but it is rarely permanent.</h4>
 <p class="html-content" style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin: 0;">A focused proof of concept against your actual use case teaches you more than months of comparison research.</p>
 </div>
 </div>
