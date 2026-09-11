@@ -5,7 +5,7 @@ description: "RAG isn't a buzzword; it's the reason your AI stops guessing and s
 pubDate: 2026-09-11
 updatedDate: 2026-09-11
 author: 'OllaSuper Systems Engineering'
-cover: "/cover_ai_agents_chatbots.jpg"
+cover: "/cover_rag_ai.jpg"
 tags: ["AI Workforce", "Applied AI Fundamentals"]
 seoKeywords: ["RAG in AI", "Retrieval Augmented Generation", "what is RAG", "RAG vs fine tuning", "RAG pipeline", "vector database", "RAG architecture", "LLM hallucination", "agentic RAG", "enterprise RAG"]
 ---
