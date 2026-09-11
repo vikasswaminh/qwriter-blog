@@ -274,7 +274,7 @@ Frequently Asked Questions
 </section>
 
 <section class="os-cta-section" style="margin-top: 64px; margin-bottom: 32px; background: #ffffff; border: 1px solid var(--color-border); border-radius: 12px; padding: 40px; text-align: center; box-shadow: var(--shadow-sm);">
-<h2 style="font-size: 1.75rem; font-weight: 800; color: var(--color-heading); margin-bottom: 16px; text-align: center !important;"> Bringing It All Together 
+<h2 style="font-size: 1.75rem; font-weight: 800; color: var(--color-heading); margin-bottom: 16px; text-align: center !important;"> Bringing It All Together </h2>
 <p style="font-size: 1.1rem; line-height: 1.6; color: var(--color-body); margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto;">
 Agent frameworks provide the reliable plumbing for memory, tools, and orchestration, letting you focus on real business value. Pick the right tool, add strong human oversight, and start scaling safely.
 </p>
