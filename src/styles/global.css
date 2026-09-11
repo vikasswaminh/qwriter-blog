@@ -1331,8 +1331,8 @@ h6 {
 .os-faq-item {
   margin-bottom: 16px;
   overflow: hidden;
-  background: var(--candy-pink-soft, #FEF2F1);
-  border: 1px solid #fbcfe8;
+  background: #ffeaea;
+  border: 1px solid #ffcaca;
   border-radius: var(--radius-md, 8px);
   transition: all 0.2s ease;
 }
