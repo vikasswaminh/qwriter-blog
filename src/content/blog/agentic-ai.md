@@ -92,7 +92,7 @@ seoKeywords: ['Agentic AI Explained', 'Autonomous Systems', 'AI Innovation']
 
 </article>
 
-<section class="os-faq" style="margin-top: 0px;">
+<section class="os-faq" style="padding: 40px; background: #ffffff; border: 1px solid var(--color-border); border-radius: 10px; box-shadow: var(--shadow-sm); margin-top: 40px;">
 <h2 id="faq" class="os-h2" style="margin-top: 32px; margin-bottom: 24px; color: var(--color-heading); font-size: 2rem; font-weight: 800;">Frequently Asked Questions</h2>
 <div >
 

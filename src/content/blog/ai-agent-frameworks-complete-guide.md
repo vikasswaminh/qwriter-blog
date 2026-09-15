@@ -229,7 +229,7 @@ The honest cost picture includes model usage, infrastructure, engineering mainte
 Watch for stronger interoperability standards, broader multi-agent adoption for complex workflows, better governance tooling, and the gradual consolidation of the framework landscape around a smaller set of dominant approaches.
 </article>
 
-<section class="os-faq" style="background: transparent; border: none; padding: 0; margin-top: 48px;">
+<section class="os-faq" style="padding: 40px; background: #ffffff; border: 1px solid var(--color-border); border-radius: 10px; box-shadow: var(--shadow-sm); margin-top: 40px;">
 <h2 id="faq" class="os-h2" style="margin-top: 0px; margin-bottom: 32px; color: var(--color-heading); font-size: 1.75rem; font-weight: 800;">
 Frequently Asked Questions
 </h2>
